@@ -1,0 +1,15 @@
+\babel@toc {brazil}{}
+\contentsline {chapter}{Introdu\c c\~ao}{6}{}%
+\contentsline {chapter}{\numberline {1}Curvas Planas}{7}{}%
+\contentsline {section}{\numberline {1.1}Curva Parametrizada Diferenci\'avel}{7}{}%
+\contentsline {section}{\numberline {1.2}Vetor Tangente; Curva Regular}{10}{}%
+\contentsline {section}{\numberline {1.3}Reparametriza\c c\~ao; Comprimento de Arco}{16}{}%
+\contentsline {section}{\numberline {1.4}Campo de Vetores ao Longo de Curvas}{21}{}%
+\contentsline {section}{\numberline {1.5}Teoria Local das Curvas Planas; F\'ormulas de \, Frenet}{23}{}%
+\contentsline {section}{\numberline {1.6}Interpreta\c c\~ao Geom\'etrica do Sinal da Curvatura}{30}{}%
+\contentsline {section}{\numberline {1.7}Raio de Curvatura e C\IeC {\'\i }rculo Osculador}{30}{}%
+\contentsline {section}{\numberline {1.8}Interpreta\c c\~ao Geom\'etrica da Curvatura}{32}{}%
+\contentsline {section}{\numberline {1.9}Teorema Fundamental das Curvas Planas}{33}{}%
+\contentsline {section}{\numberline {1.10}Determinando Curvas Regulares a Partir da Curvatura}{34}{}%
+\contentsline {chapter}{\numberline {2}Desigualdade Isoperim\'etrica}{38}{}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{45}{}%

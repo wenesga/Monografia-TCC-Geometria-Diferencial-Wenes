@@ -1,0 +1,1303 @@
+\NeedsTeXFormat{LaTeX2e}
+%-----------------------------------------------------------
+\documentclass[a4paper,12pt]{monografia}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage[mathcal]{eucal}
+\usepackage{latexsym}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{bm}
+\usepackage[all]{xy}
+\usepackage{tikz}
+\usepackage{picinpar}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+%-----------Opções tipo de capítulos:----------------------
+
+%\usepackage[Renje]{fncychap} %simples
+\usepackage[Lenny]{fncychap}
+\ChTitleVar{\LARGE\bf}
+
+
+
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{axiom}{Axioma}[section]
+\newtheorem{corollary}{Corolário}[section]
+\newtheorem{lemma}{Lema}[section]
+\newtheorem{proposition}{Proposição}[section]
+%-----------------------------------------------------------
+\theoremstyle{definition}
+\newtheorem{definition}{Definição}[section]
+\newtheorem{example}{Exemplo}[section]
+%-----------------------------------------------------------
+\theoremstyle{remark}
+\newtheorem{remark}{Observação}[section]
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\id}{\mathbf{1}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\V}{{\cal V}}
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\senh}{senh}
+\DeclareMathOperator{\tg}{tg}
+%\DeclareMathOperator
+%-----------------------------------------------------------
+\def\ind{\hbox{ ind }}
+%-----------------------------------------------------------
+\begin{document}
+%
+%----------------- Título e Dados do Autor -----------------
+\titulo{Geometria das Curvas Planas e Espaciais}
+\autor{\sc Wenes Gomes Aquino} \nome{Wenes Gomes} \ultimonome{Aquino}
+
+%
+%---------- Informe o Curso e Grau -----
+\licenciatura \curso{Matemática} \ano{2012}
+\data{00 de xxxx  de 0000} % data da aprovação
+\cidade{Arraias}
+%
+
+%----------Informações sobre a Instituição -----------------
+\instituicao{\begin{figure}[t]\centering\includegraphics[scale=0.18]{uft.pdf}\end{figure}
+\large Universidade Federal do Tocantins} \sigla{UFT}\unidadeacademica{Campus Universitário de Arraias}
+
+%
+%-------- Informações obtidas na Biblioteca ----------------
+\CDU{514.7} \areas{1.Geometria Diferencial.}
+\npaginas{60}  % total de páginas do trabalho
+%------Nomes do Orientador, 1o. Examinador e 2o. Examinador-
+\orientador{Hudson Pina de Oliveira}
+%
+
+
+%\coorientador{Nome do Co-orientador} % opcional
+%
+\examinadorum{Nome do Examinador 1}
+%
+\examinadordois{Nome do Examinador 2}
+%
+%\examinadortres{Nome do Examinador 3}
+%
+%\examinadorquatro{Nome do Examinador 4}
+
+
+
+%--------- Títulos do Orientador 1o. e 2o. Examinadores ----
+\ttorientador{Mestre em Matemática - UnB}
+%
+%\ttcoorientador{Título do Co-orientador} % se digitado \coorientador
+%
+\ttexaminadorum{Título do Examinador 1}
+%
+\ttexaminadordois{Título do Examinador 2}
+%
+%\ttexaminadortres{Título do Examinador 3}
+%
+%\ttexaminadorquatro{Título do Examinador 4}
+%
+\maketitle
+
+
+%----------------------------dedicatória  opcional--------------
+\begin{dedicatoria}
+A minha filha Gabriele, meus pais e irmãos.\\
+Aos amigos, pelo apoio e companheirismo.\\
+\end{dedicatoria}
+
+
+%--------Digite aqui o seu resumo em Português--------------
+\resumo{Resumo}
+\indent\indent xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+
+\noindent Palavras-chaves: Geometria Diferencial.
+
+
+%-----------Digite aqui o seu resumo em Inglês--------------
+%\resumo{Abstract}
+%\indent\indent xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+
+%\noindent Keywords: xxxxxxxxxxxxxx.
+
+
+%-----------Ou digite aqui o seu resumo em Frances----------
+%\resumo{Résumé}
+%\indent\indent xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+
+%\noindent Mots-clés: xxxxxxxxxxxxxxxxxxxx
+%-----------------------------------------------------------
+
+
+\agradecimento{Agradecimentos}
+\hspace{0,7cm}A DEUS pelo dom da vida, pela fé e perseverança para vencer os obstáculos.
+
+\noindent\hspace{0,7cm}Aos meus pais, pela orientação, dedicação e incentivo nessa fase do meu curso de graduação e durante toda minha vida.
+
+\noindent\hspace{0,7cm}Aos meus irmãos, que sempre está disposto a ajudar no que for necessário.
+
+\noindent\hspace{0,7cm}Aos professores e colegas que colaboraram com as diversas discussões sobre a prática docente.
+
+\noindent\hspace{0,7cm}Aos meus alunos de estágio, pelo respeito e carinho que estiveram e tem por mim sempre que me encontram.
+
+\noindent\hspace{0,7cm}Aos professores do Departamento de Matemática pelos seus ensinamentos e aos funcionários do curso, que durante esses anos,contribuíram de algum modo para o nosso enriquecimento pessoal e profissional.
+
+\noindent\hspace{0,7cm}Ao professor Hudson pela orientação, amizade e principalmente, pela paciência, sem a qual este trabalho não se realizaria.
+
+\noindent\hspace{0,7cm}Enfim, sou grato a todos que contribuíram de forma direta ou indireta para realização deste trabalho.
+
+
+\newpage
+%---------------------- EPÍGRAFE I (OPCIONAL)--------------
+\begin{epigrafe}
+"Chegar a um denominador comum \\
+Dá as coordenadas \\
+Aparar as arestas \\
+Sair pela tangente \\
+Ver de outro ângulo \\
+Retidão de caráter \\
+O xis da questão \\
+O círculo íntimo \\
+A esfera do poder \\
+Possibilidades infinitas\\
+Perdas incalculáveis\\
+Numa fração de segundos\\
+No meio do caminho\\
+Encontramos: semelhança,\\
+equivalência, estrutura,\\
+função, categoria"\\
+\hfill Nilton José Machado
+\end{epigrafe}
+
+%----Sumário, lista de figura e de tabela ------------------
+\tableofcontents \thispagestyle{empty} %\listoffigures
+%\thispagestyle{empty} \listoftables \thispagestyle{empty}
+%-----------------------------------------------------------
+
+
+%--------------Início do Conteúdo------------6---------------------------------------------
+\pagestyle{ruledheader}
+
+\chapter*{Introdução}\addcontentsline{toc}{chapter}{Introdução}
+\hspace{0,7cm}Este trabalho visa desenvolver um estudo inicial de Geometria das Curvas Planas e Espaciais, complementando e expandindo o conteúdo trabalhado nas disciplinas de graduação, dando ferramentas de extrema importância para o avanço do estudante nos campos mais abstratos da Geometria, preparando-o para seguir os estudos na área. Inicialmente, apresentaremos diversas características dessas curvas, onde serão analisados os comportamentos e propriedades básicas de algumas curvas, de formas dinâmicas, melhorando a compreensão de como esses traços são construídos, dando-lhe uma interpretação geométrica interessante.
+
+\noindent\hspace{0,7cm}Provaremos ainda o Teorema Fundamental das Curvas Planas, que garante que uma curva plana, parametrizado por comprimento de arco, é determinada essencialmente pela sua curvatura com sinal.
+
+\noindent\hspace{0,7cm}Essencialmente utilizaremos derivadas de primeira, segunda e terceira ordem e algumas noções elementares de Geometria Diferencial.
+Existem inúmeras maneiras de se calcular curvas planas e espaciais. Isto se deve ao fato de que podemos representar curvas no plano e no espaço de diversas formas. A mais conhecida é a representação paramétrica, pois estudos sobre curvas representadas parametricamente são bem conhecidos e facilmente encontrados em livros clássicos de Geometria Diferencial.
+
+%-------------------------------------------7----------------------------------------------
+
+\chapter{Curvas Planas}
+
+\hspace{0,7cm}Intuitivamente, gostaríamos de pensar em uma curva no plano como um subconjunto que \emph{tenha  dimensão  igual a 1},  por exemplo, o gráfico de funções de uma variável real ou figuras \emph{"desenhadas"} com um único traço, sem tirar o lápis do papel. De forma um pouco mais precisa, uma curva é uma deformação contínua de um intervalo, ou ainda, a trajetória de um deslocamento de uma partícula no plano.
+
+\section{Curva Parametrizado Diferenciável}
+
+\hspace{0,7cm}Nesta seção vamos estudar localmente uma curva $\alpha$ no plano, isto é, fixado $t_{0}$, estudaremos como a curva $\alpha(t)$ se comporta para valores de $t$ próximos de $t_{0}$. Uma curva no plano é descrita dando-se as coordenadas de seus pontos como funções de uma variável independente.
+
+\begin{definition}
+Uma \emph{curva parametrizado diferenciável} do plano é uma  aplicação \linebreak $\alpha: I \rightarrow \R^2$ tal que $\forall t \in I$ associa $\alpha (t) =(x(t),y(t))$ onde as funções $x,y: I \rightarrow \R$ são funções diferenciáveis de classe $C^{\infty}$, de un intervalo aberto $I\subset\R$ em $\R^2$ . A variável $t\in I$  é dita parâmetro da curva e o subconjunto de $\R^2$ dos pontos $\alpha(t), $ $t\in I$, é chamado o traço da curva (ver Figura \ref{Curva.P.D}).
+\end{definition}
+
+\noindent O \emph{traço} de $\alpha$ é a imagem da aplicação $\alpha$:
+\begin{center}
+\emph{Traço} $(\alpha)=Im (\alpha) = \{\alpha(t)\in\R^2:t\in I\subset\R^2\}.$
+\end{center}
+\noindent O \emph{gráfico} de $\alpha$ é o conjunto
+\begin{center}
+\emph{Gráfico} $(\alpha)=\{(t,\alpha(t))\in\R^3:t\in I\subset\R^3\}$
+\end{center}
+que, obviamente, é diferente do traço de $\alpha.$
+%-----------------------------------------8-----------------------------------------------
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.5]{def211.pdf}\caption{Curva parametrizada diferenciavél\label{Curva.P.D}}
+\end{figure}
+
+\noindent\hspace{0,7cm} Observamos que uma curva parametrizado diferenciável do plano é uma a\-pli\-ca\-ção $\alpha: I \rightarrow \R^2$ que para cada $t$ associa $\alpha (t) =(x(t),y(t))$, onde as funções $x(t)$ e $y(t)$ são diferenciável de classe $C^{\infty}$.
+
+\noindent\hspace{0,7cm}Vejamos alguns exemplos:
+
+\begin{example}
+A aplicação $\alpha: \R \rightarrow \R^2$ dada por $$\alpha (t)=(a,b)$$ é uma curva parametrizado diferenciável cujo traço se reduz ao ponto $(a,b)$ (\emph{Curvas constante})(ver Figura \ref{curva.c}).
+\end{example}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.25]{ex211.pdf}\caption{Curva constante\label{curva.c}}
+\end{figure}
+
+\begin{example}
+A aplicação $\alpha: \R \rightarrow \R^2$ dada por
+$$\alpha(t)=(x_{0}+at,y_{0}+bt), \quad t\in\R,$$ onde $a^{2}+b^{2} \neq 0$ é uma curva parametrizado diferenciável cujo traço é uma linha \emph{reta} passando pelo ponto $(x_{0},y_{0})$ e paralela ao vetor de coordenadas $(a,b)$ (ver Figura \ref{reta}).
+\end{example}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.25]{ex212.pdf}\caption{Reta\label{reta}}
+\end{figure}
+
+%\newpage%-------------------------------------------9---------------------------------------------
+
+\begin{example}
+A aplicação $\alpha: (0,2\pi) \rightarrow \R^2$ dada por $$\alpha(t)=(\cos t,\sen t), \quad t\in (0,2\pi),$$ é uma curva parametrizado diferenciável cujo traço é uma \emph{circunferência} de centro na origem de raio igual a 1, menos um ponto. (ver Figura \ref{circunferencia}).
+\end{example}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.6]{ex213.pdf}\caption{Circunferência\label{circunferencia}}
+\end{figure}
+
+\begin{example}
+A aplicação $\alpha:\R\rightarrow\R^2$ dada por $$\alpha (t)=(\cos t(2\cos t-1),\sen t(2\cos t-1)),\quad t\in\R,$$ é uma curva parametrizado diferenciável cujo traço é um \emph{cardióide} (ver Figura \ref{cardioide}).
+\end{example}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.25]{ex214.pdf}\caption{Cardióide\label{cardioide}}
+\end{figure}
+
+%----------------------------------------10-----------------------------------------------
+
+\begin{example}\label{215}
+A aplicação $\alpha: \R \rightarrow \R^2$ dada por $$\alpha (t)=(t,|t|), \quad t\in\R,$$ não é uma curva parametrizado diferenciável, já que $|t|$ não diferenciável em $t=0$. Porém a restrição de $\alpha$, a qualquer intervalo que não contém o ponto $t=0$, é uma curva parametrizado diferenciável (ver Figura \ref{modulo}).
+\end{example}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.35]{ex215.pdf}\caption{Módulo\label{modulo}}
+\end{figure}
+
+\noindent\hspace{0,7cm}Duas curvas parametrizadas podem ter o mesmo traço.
+
+\begin{example}
+Considere $$\alpha(t)=(t,2t)\quad t\in\R, \quad \mbox{e} \quad \beta(t)=(2r+1,4r+2), \quad r\in\R.$$ Estas
+curvas tem o \emph{mesmo traço} que é uma reta passando pela origem na direção do vetor $(1, 2)$ (ver Figura \ref{curva igual}).
+\end{example}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.5]{ex216.pdf}\caption{Curva com o mesmo traço\label{curva igual}}
+\end{figure}
+%------------------------------------------11-----------------------------------------------
+
+\section{Vetor Tangente; Curva Regular}
+
+\noindent\hspace{0,7cm}Para definirmos curva regular, precisamos definir o que é seu vetor tangente em cada ponto.
+
+\begin{definition}
+Seja $\alpha: I \subset \R \rightarrow \R^2$ uma curva parametrizado diferenciável, que para cada $t\in I$ associa $\alpha (t) =(x(t),y(t))$. Do Cálculo Diferencial temos que
+$$\alpha' (t)=(x'(t),y'(t))$$
+é chamado o \emph{vetor tangente} a $\alpha$ em $t$.
+\end{definition}
+
+\noindent\hspace{0,7cm}A definição de vetor tangente coincide com a noção intuitiva que temos de um vetor tangente a uma curva, isto é, um vetor cuja  direção é a direção limite de cordas, determinadas por um ponto $\alpha(t)$  e pontos próximos $\alpha(t+h)$, quando $h$ tende para zero. De fato , fixado    $t\in I$, para $h\neq0$ tal que  $t+h\in I,$
+$$\frac{{\alpha (t + h) - \alpha (t)}}{h}$$
+é o vetor de $\alpha(t)$ a $\alpha(t+h)$ multiplicado pelo escalar $\dfrac{1}{h}$ (ver Figura \ref{vetor-tangente} ). Observe que
+$$\mathop {\lim }\limits_{h \to 0} \frac{{\alpha (t + h) - \alpha (t)}}{h}$$
+é exatamente a definição da derivada da função $\alpha$ em $t$.
+\begin{figure}[ht]\centering
+\includegraphics[scale=0.8]{vetor-tangente.pdf}\caption{Vetor tangente.\label{vetor-tangente}}
+\end{figure}
+
+
+\begin{example}\label{vetortan}
+Considere $\alpha:\R\rightarrow\R^2$ dada por $$\alpha(t)=(\cos t(2\cos t-1), \sen t(2\cos t-1)),$$ uma curva parametrizado diferenciável. O vetor tangente por definição é a derivada da curva  $\alpha(t)$, sabendo disto temos,
+\begin{eqnarray*}
+&\displaystyle\frac{d\alpha}{dt}&=\displaystyle\frac{d}{dt}(\cos t(2\cos t-1), \sen t(2\cos t-1))\\
+&&=(-\sen t(2\cos t-1 )-\cos t(2\sen t),\cos t(2\cos t -1)+\sen t(-2\sen t))\\
+&&=(-2\sen t\cos t+\sen t-2\cos t\sen t,2\cos^2t-\cos t-2\sen^2t)\\
+&&=(-\sen2t+\sen t-\sen 2t, 2\cos 2t-\cos t)\\
+&&=(\sen t-2\sen2t,2\cos2t-\cos t).
+\end{eqnarray*}
+Portanto, $$\alpha'(t)=(\sen t-2\sen2t,2\cos2t-\cos t)$$ é o vetor tangente a $\alpha$ em $t$.
+\end{example}
+
+%-----------------------------------------12-----------------------------------------------
+
+
+\noindent\hspace{0,7cm}Observa-se, que um vetor tangente a uma curva $\alpha$ é definido no parâmetro $t$, e não no ponto $\alpha(t)$, pois, como podemos observar no Exemplo \ref{vetortan} $\alpha\left(\dfrac{\pi}{3}\right)=\alpha\left(-\dfrac{\pi}{3}\right)=0$ (ver Figura \ref{cardioide}) e, no entanto, $\alpha'\left(\dfrac{\pi}{3}\right)\neq\alpha'\left(-\dfrac{\pi}{3}\right)$. Portanto, o vetor tangente ao traço da curva na origem de $\R^2$ não está bem definido.
+
+\noindent\hspace{0,7cm}Para o desenvolvimento da teoria local das curvas é necessário que exista reta tangente à curva $\alpha$ para cada valor do Parâmetro $t$. Para isso, é suficiente que o vetor tangente a $\alpha$ não seja nulo para todo $t$.  Portanto restringiremos o nosso estudo apenas às curvas que satisfazem esta condição. Estas curvas são definidas a seguir.
+
+\begin{definition}
+Uma curva parametrizado diferenciável $\alpha: I \rightarrow \R^2$ é dita \emph{regular} se $\forall t \in I$, $\alpha'(t)\neq(0,0)$.
+\end{definition}
+\noindent Essa definição  implica na existência de reta tangente em todos os pontos do traço de $\alpha.$
+
+\begin{definition}
+Seja $\alpha: I \rightarrow \R^2$ uma curva regular. A \emph{reta tangente} à $\alpha$ em $t_{0}\in I$ é a reta que passa por $\alpha(t_{0})$, na direção de $\alpha'(t_{0})$, isto é dada pela função $$g(r)=\alpha(t_{0})+r\alpha'(t_{0}), \quad r\in \R$$ (ver Figura \ref{reta-tangente}).
+\end{definition}
+
+\begin{figure}[ht]\centering
+\includegraphics[scale=0.5]{reta-tangente.pdf}\caption{Vetor tangente e reta tangente a uma curva paramentrizada em um ponto.\label{reta-tangente}}
+\end{figure}
+
+
+\begin{example}Considere o círculo menos um ponto, a aplicação $\alpha: I \rightarrow \R^2$ dada por,
+$$\alpha(t)=(\cos t,\sen t),\quad t\in(0,2\pi).$$
+Temos que $\alpha$ é de classe $C^\infty$ e
+$$\alpha'(t)=(-\sen t,\cos t)\neq(0,0),\quad\forall t \in (0,2\pi).$$
+Logo, $\alpha$ é regular.
+\end{example}
+
+%-----------------------------------------13----------------------------------------------
+\begin{example}Consideremos a \emph{espiral logarítmica} a aplicação $\alpha: \R \rightarrow \R^2$ dada por
+$$\alpha(t)=e^t(\cos t,\sen t), \quad\forall t \in \R.$$ (ver Figura \ref{espiral})
+
+\begin{figure}[!htb]\centering
+\includegraphics[scale=0.6]{ex223.pdf}\caption{Espiral Logarítmica.\label{espiral}}
+\end{figure}
+
+\noindent Temos que,
+$$\left\{\begin{array}{rll}
+x(t)=e^t\cos t\\
+y(t)=e^t\sen t\\
+\end{array}\right.$$
+
+\noindent são de classe $C^\infty$. Além disso, $\alpha'(t)=(e^t\cos t-e^t\sen t, e^t\sen t+e^t\cos t).$
+Assim
+\begin{eqnarray*}
+\alpha'(t_0)=(0,0)&\Leftrightarrow&
+\left\{\begin{array}{rll}
+e^{t_0}\cos t_0-e^{t_0}\sen t_0=0\\
+e^{t_0}\sen t_0+e^{t_0}\cos t_0=0\\
+\end{array}\right.\\
+&\Leftrightarrow&
+\left\{\begin{array}{rll}
+\cos t_0-\sen t_0=0\\
+\sen t_0+\cos t_0=0\\
+\end{array}\right.\\
+&\Leftrightarrow&
+\left\{\begin{array}{rll}
+\cos t_0&=&\sen t_0\\
+\cos t_0&=&-\sen t_0
+\end{array}\right.
+\end{eqnarray*}
+ou seja, $\sen(t_0)=\cos(t_0),$ que é uma contradição. Por consequência, $\alpha'(t)\neq(0,0), \;\forall t \in \R.$ Logo, $\alpha$ é regular
+\end{example}
+
+\begin{example}
+Considere a \emph{tratriz} a aplicação $\alpha: I \rightarrow \R^2$ dada por
+$$\alpha(t)=\left(\sen t, \cos t+\ln\left(\tg\frac{t}{2}\right)\right),\quad t\in(0,\pi).$$ (ver Figura \ref{tatriz})
+
+%---------------------------------------14------------------------------------------------
+\begin{figure}[!htb]\centering
+\includegraphics[scale=0.5]{ex224.pdf}\caption{Tatriz.\label{tatriz}}
+\end{figure}
+
+\noindent Observamos que $t\in(0,\pi)$ é equivalente a $\dfrac{t}{2}\in\left(0,\dfrac{\pi}{2}\right).$ Como $\sen t,$ $\cos t,$ $\tg \dfrac{t}{2},$ $\ln\left(\tg \dfrac{t}{2}\right)$ estão definidas para $t\in(0,\pi)$ e são de $C^\infty$.\\
+Além disso,
+
+\begin{eqnarray*}
+&\alpha'(t)&=\left(\cos t, -\sen t+\frac{1}{\tg\dfrac{t}{2}}\left(\sec^2\frac{t}{2}\right)\dfrac{1}{2}\right)\\
+&&=\left(\cos t, -\sen t+\frac{1}{\sen t}\right).
+\end{eqnarray*}
+
+\noindent Assim,
+
+\begin{eqnarray*}
+\alpha'(t_0)=(0,0)&\Leftrightarrow&
+\left\{\begin{array}{rll}
+&\cos t_0=0\\
+&-\sen t_0+\dfrac{1}{\sen t_0}=0\\
+\end{array}\right.\\
+&\Leftrightarrow&
+\left\{\begin{array}{rll}
+&\cos t_0=0\\
+&\dfrac{-\sen^2 t_0+1}{\sen t_0}=0\\
+\end{array}\right.\\
+&\Leftrightarrow&
+\left\{\begin{array}{rll}
+&\cos t_0=0\\
+&\sen^2 t_0=1\\
+\end{array}\right.\\
+&\Leftrightarrow&
+\left\{\begin{array}{rll}
+&\cos t_0=0\\
+&1-\cos^2 t_0=1\\
+\end{array}\right.\\
+&\Leftrightarrow&
+\left\{\begin{array}{ll}
+&\cos t_0=0\\
+&\cos^2 t_0=0\\
+\end{array}\right.\\
+&\Leftrightarrow&
+t_0=\frac{\pi}{2};\quad t\in(0,\pi).\\
+\end{eqnarray*}
+Logo, $\alpha'\left(\dfrac{\pi}{2}\right)=(0,0),$ ou seja, $\alpha$ não é regular.\\
+Observamos que excluindo-se $t=\dfrac{\pi}{2}$, $\alpha$ seria regular.
+\end{example}
+
+\begin{remark}
+Uma curva ser regular implica que seu traço tem reta tangente em todos os pontos e, portanto, não possui "quinas". No entanto, uma curva parametrizado cujo traço não possui "quinas" pode não ser regular. Mais ainda, duas curvas parametrizadas podem ter mesmo traço e uma ser regular e a outra não. Exemplo: $$\alpha(t)=(t^3,t^3),\quad t\in \R$$
+não é regular  e $$\alpha(t)=(t,t),\quad t\in \R$$ é regular.
+\end{remark}
+
+\begin{example}
+Uma exemplo interessante de uma curva parametrizado diferenciável regular, é dado por $\alpha: I \rightarrow \R^2$ definida por $\alpha(t)=(t,f(t))$, onde $f: I \rightarrow \R$ é uma função diferenciável. O traço de $\alpha$ é igual ao gráfico de $t$. Como $\alpha'(t)=(1,f'(t))\neq(0,0), \forall t \in I, \alpha$ é uma curva regular. Vamos mostrar que toda curva regular é dessa forma.
+\end{example}
+
+\begin{proposition}
+Seja $\alpha:I\rightarrow\R^2$ uma curva parametrizado diferenciável e regular em $t_0\in I.$ Então, existe $\delta >0,$ tal que, restrito ao intervalo $(t_0-\delta,t_0+\delta)$, o traço de $\alpha$ coincide com o traço de uma curva $\beta$ da forma $\beta(t)=(t,f(t))$ ou $\beta(t)=(f(t),t),$ para uma função diferenciável $f:J\rightarrow\R.$
+\end{proposition}
+
+\begin{figure}[ht]\centering
+\includegraphics[scale=0.5]{pro221.pdf}\caption{Traço de $\alpha$ é igual ao traço de $\beta$\label{alfa=beta}}
+\end{figure}
+
+\begin{proof}
+Seja $\alpha$ dada por $\alpha (t) =(x(t),y(t))$. Como $\alpha$ é regular em $t=t_0,$ temos que
+$$\alpha'(t_0) =(x'(t_0),y'(t_0))\neq(0,0).$$
+Vamos supor que $x'(t_0)\neq0$. Nesse caso, pelo teorema da função inversa, existe um intervalo $(t_0-\delta_1,t_0+\delta_1)$, tal que a função $x$ é um difeomorfismo, isto é, uma função diferenciável com inversa diferenciável, sobre $J=x((t_0-\delta_1,t_0+\delta_1))$. Seja $\beta:J\rightarrow\R^2$ dada por $\beta(t)=\alpha(x^{-1}(t)).$ Temos portanto, que $\beta$ é uma curva diferenciável e
+$$\beta(t)=(x(x^{-1}(t)),y(x^{-1}(t)))=(t,f(t)),$$
+onde $f$, dada por $f(t)=y(x^{-1}(t)),$ é uma função diferenciável. A prova, no caso em que $y'(t_0)\neq0,$ é análoga e, nesse caso, obtemos que o traço de $\alpha$ coincide localmente em $\alpha(t_0)$ com o traço de uma curva da forma $\beta(t)=(f(t),t).$
+\end{proof}
+
+\section{Reparametrização; Comprimento de Arco}
+\hspace{0,7cm}Vamos definir a seguir como obter várias curvas tendo o mesmo traço.
+\begin{definition}
+Seja $I$ e $J$ intervalos abertos de $\R$, $\alpha: I \rightarrow \R^2$ uma curva regular e $h:J\rightarrow I$ uma função diferenciável $(C^{\infty})$, cuja derivada de primeira ordem é não-nula em todos os pontos de $J$ e tal que $h(J)=I$. Podemos então considerar uma nova curva $\beta:J\rightarrow\R^2$, definida por
+$$\beta(t)=(\alpha \circ h)(t)=\alpha(h(t)).$$
+A curva $\beta$ é uma curva regular, que tem o mesmo traço que $\alpha$, chamada a \emph{reparametrização de $\alpha$ por $h$}. A função $h$ é dita \emph{mudança de parâmetro} (ver Figura \ref{reparametrizacao}).
+\noindent Pela regra da cadeia, temos que
+$$\beta'(t)=(x'(h(t))h'(t), y'(h(t))h'(t),$$
+ou ainda,
+$$\beta'(t)=(\alpha \circ h)'(t)=\alpha'(h(t))h'(t).$$
+\end{definition}
+
+\begin{figure}[ht]\centering
+\includegraphics[scale=0.4]{def231.pdf}\caption{Reparametrização de $\alpha$ por $h$\label{reparametrizacao}}
+\end{figure}
+
+\begin{example}
+Considere a circunferência de raio $a$ dada por $$\alpha(t)=(a\cos t, a \sen t), \quad t\in[0,2\pi].$$ Seja $h(s)=\dfrac{s}{a}, s\in[0,2\pi]$. A reparametrização da curva $\alpha$ por $h$ é a curva $$\beta(s)=\alpha\circ h(s)=\left(a \cos\dfrac{s}{a},a \sen\dfrac{s}{a}\right).$$ Neste caso as curvas $\alpha$ e $\beta$ têm a mesma orientação.
+\end{example}
+
+\begin{example}
+A curva regular $$\beta(r)=(-2r+1,-4r+2), \quad r\in\R.$$ é uma reparametrização da curva $$\alpha(t)=(t,2t),\quad t\in\R.$$
+\noindent Basta considerar a mudança de parâmetro $h(r)=-2r+1,  r\in\R.$ Neste caso as curvas $\alpha$ e $\beta$ têm orientação opostas (ver Figura \ref{orientacao}).
+\end{example}
+
+\noindent\hspace{0,7cm}Vamos considerar apenas reparametrização onde a função mudança de parâmetro é estritamente crescente ou decrescente e portanto bijetora. Neste caso $h'(t)\neq(0,0)$ e, portanto se $\alpha$ é uma curva regular em $I$, sua reparametrização $\beta=\alpha\circ h$ também será curva regular em $J.$
+
+\noindent\hspace{0,7cm}Uma mudança de parâmetro $h$ é uma função estritamente crescente ou decrescente, portanto é bijetiva. Além disso, se $\beta$ é uma reparametrização de $\alpha$ por $h$, então $\alpha$ é uma reparametrização de $\beta$ por $h^{-1}.$
+
+\begin{definition}
+A \emph{orientação} de uma curva regular plana $\alpha$ é o sentido de percurso do traço de $\alpha$.
+\end{definition}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.4]{ex232.pdf}\caption{Orientação oposta\label{orientacao}}
+\end{figure}
+
+\noindent\hspace{0,7cm}Se $h$ é estritamente crescente, dizemos que a reparametrização $\beta=\alpha \circ h$ é positiva, ou que preserva a orientação de $\alpha$. No caso em que $h$ é estritamente decrescente, a reparametrização é dita negativa, ou que reverte a orientação de $\alpha$.
+
+\noindent\hspace{0,7cm}A seguir vamos definir comprimento do arco para uma curva regular.
+\begin{definition}
+Seja $\alpha: I \rightarrow \R^2$ uma curva regular e fixemos  $t_0$ e $t_1$ pontos do intervalo $I.$ A aplicação $$s(t)=\displaystyle\int_{t_0}^{t}|\alpha'(t)|dt=\displaystyle\int_{t_0}^{t}\sqrt{(x'(t))^2+(y'(t))^2}dt,$$
+é denominada a \emph{função comprimento de arco} da curva $\alpha$ a partir de $t_0.$
+Esta função é diferenciável de Classe $C^\infty$, pois $\alpha$ é uma curva regular.
+\end{definition}
+
+\begin{example}
+Seja o círculo a aplicação $\alpha:I\rightarrow\R^2$ dada por
+$$\alpha(t)=(a+r\cos t,b+r\sen t),\quad t\in[0,2\pi],\quad a,b\in\R,\quad\textrm{e}\quad r>0.$$
+o comprimento de $\alpha$ é,
+\begin{eqnarray*}
+s(t)&=&\displaystyle\int_{0}^{2\pi}|\alpha'(t)|dt\\
+&=&\displaystyle\int_{0}^{2\pi}|(-r\sen t,r\cos t)|dt\\
+&=&\displaystyle\int_{0}^{2\pi}\sqrt{r^2\sen^2 t+r^2\cos^2 t}dt\\
+&=&\displaystyle\int_{0}^{2\pi}\sqrt{r^2(1)}dt=\displaystyle\int_{0}^{2\pi}rdt=2\pi r.
+\end{eqnarray*}
+\end{example}
+
+\noindent\hspace{0,7cm}Vejamos que o comprimento de uma curva pode ser finito, mesmo que o seu intervalo de definição tenha comprimento infinito.
+%\newpage%--------------------------------------------------------------------------------
+\begin{example}
+Seja a espiral logarítmica a aplicação $\alpha:I\rightarrow\R^2$ dada por $$\alpha(t)=e^t(\cos t,\sen t),\quad t\in(-\infty,0].$$
+Temos
+\begin{eqnarray*}
+s(t)&=&\lim_{a\to-\infty}\displaystyle\int_{a}^{0}|\alpha'(t)|dt\\
+&=&\lim_{a\to-\infty}\displaystyle\int_{a}^{0}|(e^t(\cos t-\sen t),e^t(\sen t+\cos t))|dt\\
+&=&\lim_{a\to-\infty}\displaystyle\int_{a}^{0}\sqrt{e^{2t}(\cos t-\sen t)^2+e^{2t}(\sen t+\cos t)^2}dt\\
+&=&\lim_{a\to-\infty}\displaystyle\int_{a}^{0}e^t\sqrt{2}dt\\
+&=&\sqrt{2}\lim_{a\to-\infty}(e^0-e^a)=\sqrt{2}.
+\end{eqnarray*}
+Observemos que $\alpha(0)=(1,0)$ (ver Figura \ref{comprimento infinito}).
+\end{example}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.7]{ex234.pdf}\caption{Domínio da parametrização com comprimento infinito e comprimento finito.\label{comprimento infinito}}
+\end{figure}
+
+\begin{definition}
+Uma curva regular $\alpha:I\rightarrow\R^2$ é dita uma curva \emph{parametrizado pelo comprimento de arco} se, para cada $t_0, t_1\in I, t_0\leq t_1,$ o comprimento de arco da curva $\alpha$ de $t_0$ a $t_1$ é igual a $t_1-t_0.$ Isto é, $$\displaystyle\int_{t_0}^{t_1}|\alpha'(t)|dt=t_1-t_0$$
+(ver Figura \ref{comprimento de arco}).
+\end{definition}
+
+\begin{figure}[ht]\centering
+\includegraphics[scale=0.7]{def234.pdf}\caption{Curva parametrizada pelo comprimento de arco.\label{comprimento de arco}}
+\end{figure}
+
+\begin{proposition}\label{estaparam}
+Uma curva $\alpha:I\rightarrow\R^2$ está parametrizado pelo comprimento de arco, se e somente se, $\forall t \in I, |\alpha'(t)|=1.$
+\end{proposition}
+
+\begin{proof}
+Suponhamos $\alpha$ parametrizado pelo comprimento de arco e fixemos $t_0 \in I.$ Consideremos a função $s:I\rightarrow\R$, que, para cada $t\in I$, associa
+$$s(t)=\displaystyle\int_{t_0}^{t}|\alpha'(t)|dt.$$ Se $t_0\leq t_1$, então, por hipótese,
+$$\displaystyle\int_{t_0}^{t}|\alpha'(t)|dt=t-t_0;$$ se $t\leq t_0$, então
+$$-s(t)=\displaystyle\int_{t}^{t_0}|\alpha'(t)|dt=t_0-t.$$ Portanto, para todo $t\in I,\; s(t)=t-t_0,$ donde $s'(t)=1.$ Como $s'(t)=|\alpha'(t)|,$ concluímos que $|\alpha'(t)|=1 \quad \forall t \in I.$ A recíproca é imediata.
+\end{proof}
+
+\begin{example}
+A aplicação
+$$\alpha(t)=\left(a\cos \frac{t}{a},a\sen \frac{t}{a}\right) \quad t\in \R,$$
+onde $a\neq0,$ é uma curva regular parametrizado pelo comprimento de arco, já que
+
+\begin{eqnarray*}
+\alpha'(t)&=&\left(-\sen\frac{t}{a},\cos\frac{t}{a}\right)\\
+|\alpha'(t)|&=&\sqrt{\sen^2 \frac{t}{a}+\cos^2\frac{t}{a}}\\
+&=&1,\quad \forall t \in\R
+\end{eqnarray*}
+\end{example}
+
+\noindent\hspace{0,7cm}O próximo resultado mostra que toda curva regular admite uma reparametrização pelo comprimento de arco.
+
+\begin{proposition}\label{param.pelo.compr.de.arco}
+Seja $\alpha:I\rightarrow\R^2$ uma curva regular e $s:I\rightarrow s(I)\subset\R$ a função comprimento de arco de $\alpha$ a partir de $t_0.$ Então existe a função inversa $h$ de $s$, definida no intervalo aberto $J=s(I)$ e $\beta=\alpha\circ h$ é uma reparametrização de $\alpha,$ onde $\beta$ está parametrizado pelo comprimento de arco.
+\end{proposition}
+
+\begin{proof}
+Se $\alpha$ é uma curva regular, então
+$$s'(t)=|\alpha'(t)|>0,$$
+isto é, $s$ é uma função estritamente crescente. Segue-se que existe a função inversa de $s,$ $h:J\rightarrow I.$ Como $\forall t \in I,$ $h(s(t))=t,$ temos que
+$$\dfrac{dh}{ds}\dfrac{ds}{dt}=1$$
+$$\dfrac{dh}{ds}s'(t)=1,$$
+portanto, $$\dfrac{dh}{ds}=\dfrac{1}{s'(t)}=\dfrac{1}{|\alpha'(t)|}>0.$$
+Concluímos que
+$$\beta(s)=\alpha\circ h(s) \;\;s\in J,$$
+é uma reparametrização de $\alpha$ e
+\begin{eqnarray*}
+  \left| {\frac{{d\beta }}{{ds}}} \right| &=& \left| {\frac{{d\alpha }}{{dt}}} \right| \cdot \left| {\frac{{dh}}{{ds}}} \right|\\
+  &=&\left|\alpha '(t)\right| \cdot \frac{1}{{\left|\alpha '(t)\right|}}\\
+  &=&1
+\end{eqnarray*}
+Portanto pela proposição \ref{estaparam}, $\beta$ está parametrizado pelo comprimento de arco.
+\end{proof}
+
+\begin{definition}
+A aplicação $\beta$ da proposição \ref{param.pelo.compr.de.arco}  é dita uma \emph{reparametrização de $\alpha$ pelo comprimento de arco}.
+\end{definition}
+
+\noindent\hspace{0,7cm}Observamos que esta parametrização não é única, pois depende da função comprimento de arco, que por sua vez depende de $t_0$ fixado.
+
+\begin{example}
+Considere $\alpha(t)=(at+c,bt+d), t\in\R,$ e $a^2+b^2\neq0.$ Seja $s(t)$ a função comprimento de arco de $\alpha$ a partir de $t_0=0,$ isto é, $$s(t)=\displaystyle\int_{0}^{t}\sqrt{a^2+b^2}dt=\sqrt{a^2+b^2}t.$$
+A função inversa se $s$ é dada por $h(s)=\dfrac{s}{\sqrt{a^2+b^2}}, \;s \in\R.$ Portanto $\beta=\alpha\circ h,$ que a cada $s$ associa $$\beta(s)=\left(a\dfrac{s}{\sqrt{a^2+b^2}}+c,b\dfrac{s}{\sqrt{a^2+b^2}}+d\right),$$ é uma reparametrização de $\alpha$ pelo comprimento de arco.
+\end{example}
+
+
+\begin{example}
+Considere a espiral logarítmica $\alpha(t)=(e^t\cos t, e^t\sen t), \quad t\in\R.$ Temos que $|\alpha'(t)|=\sqrt{2}e^t$ e portanto a função comprimento de arco de $\alpha,$ a partir de $t_0=0,$ é $$s(t)=\sqrt{2}e^t-\sqrt{2}.$$ A função inversa é dada por $$h(s)=\log\left(\frac{s}{\sqrt{2}}+1\right).$$ Portanto, $$\beta(s)=\left(\left(\frac{s}{\sqrt{2}}+1\right)\cos\left(\log\left(\frac{s}{\sqrt{2}}+1\right)\right), \left(\frac{s}{\sqrt{2}}+1\right)\sen\left(\log\left(\frac{s}{\sqrt{2}}+1\right)\right)\right)$$ é uma reparametrização de $\alpha$ pelo comprimento de arco.
+\end{example}
+
+\section{Campo de Vetores ao Longo de Curvas}
+
+\noindent\hspace{0,7cm}Intuitivamente, um campo de vetores $X(r)$ ao longo de uma curva parametrizada $\alpha:I\to\R^2$ é uma aplicação que a cada $r\in I$ associa um vetor com origem em $\alpha(r).$
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.6]{campvetor.pdf}\caption{Campo de vetores $X(r)$ ao longo de $\alpha$.\label{campvetor}}
+\end{figure}
+
+\noindent\hspace{0,7cm}Logo para determinar $X(r)$, basta conhecer a extremidade final do vetor $X(r)$, uma vez que sua extremidade inicial é $\alpha(r)$.
+
+\begin{definition}
+Um \emph{campo de vetores} de classe $C^j$ ao longo de $\alpha$ é uma aplicação $X:I\rightarrow\R^2$ de classe $C^j$. Geometricamente, o campo de vetores $X(r)$ é dado, em cada ponto $\alpha(r)$ pelo vetor de extremidades $\alpha(r)$ e $X(r)$.
+\end{definition}
+
+\noindent\hspace{0,7cm}Se $\alpha$ é uma curva parametrizada e regular, dada por $\alpha(r) = (x(r),y(r))$, então $t(r)$, definido por $t(r)=(x'(r),y'(r))$, é um campo de classe $C^\infty$ ao longo de $\alpha$. $t(r)$ é chamado \emph{campo tangente}. No caso em que $\alpha$ está parametrizada pelo comprimento de arco, $t(r)$ é campo unitário, isto é $|t(r)|=1.$ O campo $n(r)$ é dado por $n(r)=(-y'(r),x'(r))$, é também um campo de  $C^\infty$ ao longo de $\alpha$. Observe que, para todo $r\in I$,
+\begin{eqnarray*}
+\left\langle {t(r),n(r)} \right\rangle &=&\left\langle {(x'(r),y'(r)),(-y'(r),x'(r))} \right\rangle\\
+                                       &=&- x'(r)y'(r) + y'(r)x'(r)\\
+                                       &=&0,
+\end{eqnarray*}
+isto é, $n(r)$ é perpendicular a $t(r)$. $n(r)$ é chamando de \emph{campo normal}. No caso em que $\alpha$ está parametrizada pelo comprimento de de arco, $n(r)$ é campo unitário.
+
+\noindent\hspace{0,7cm}Dados dois campos $X(r)$ e $Y(r)$ de classe $C^j$ ao longo de $\alpha$ e uma função $f:I\rightarrow\R$ de classe $C^j$, podemos definir os campos $X(r)+Y(r)$ e $f(r)X(r)$ por
+$$(X+Y)(r) = X(r)+Y(r),$$
+$$(fX)(r) = f(r)X(r),$$
+que também serão campos de classe $C^j$ ao longo de $\alpha$. Se $X(r)=(X_1(r),X_2(r))$ é um campo de classe $C^j$, com $j>0,$ definimos a derivada de $X(r)$ por
+$$X'(r)=(X'_1(r),X'_2(r)).$$
+Nesse caso, o campo $X'(r)$ é um campo de classe $C^{j-1}$ ao longo de $\alpha$. As seguintes relações são facilmente verificadas:
+$$(X(r)+Y(r))'=X'(r)+Y'(r),$$
+$$(f(r)X(r))'=f'(r)X(r)+f(r)X(r)',$$
+$$\langle X(r),Y(r)\rangle'=\langle X'(r),Y(r)\rangle+\langle X(r),Y'(r)\rangle.$$
+Temos então o seguinte resultado:
+\begin{proposition}
+Se $|X|$, é constante, então $X'(r)$ é perpendicular a $X(r),$ para todo $r\in I,$ isto é,
+\begin{equation*}\label{}
+    \langle X(r),X'(r)\rangle=0.
+\end{equation*}
+Se $X(r)$ e $Y(r)$ são perpendiculares para todo $r\in I,$ então
+\begin{equation*}\label{}
+    \langle X'(r),Y(r)\rangle=-\langle X(r),Y'(r)\rangle.
+\end{equation*}
+\end{proposition}
+
+\begin{proof}
+Derivando a equação $\langle X(r),X(r)\rangle=const.,$ temos que,
+$$\langle X'(r),X(r)\rangle+\langle X(r),X'(r)\rangle=0,$$
+$$2\langle X'(r),X(r)\rangle=0,$$
+$$\langle X'(r),X(r)\rangle=0,$$
+o que prova a primeira parte. Para demonstrar a segunda parte, basta derivar a equação $\langle X(r),Y(r)\rangle=0,$ daí temos,
+$$\langle X'(r),Y(r)\rangle+\langle X(r),Y'(r)\rangle=0,$$
+portanto,
+$$\langle X'(r),Y(r)\rangle=-\langle X(r),Y'(r)\rangle.$$
+\end{proof}
+
+
+\section{Teoria Local das Curvas Planas; Fórmulas de Frenet}
+
+\noindent\hspace{0,7cm}Vamos considerar nesta seção curvas $\alpha:I\rightarrow\R^2$ parametrizadas pelo comprimento de arco, $$\alpha(s)=(x(s),y(s)), \; s\in I.$$ Para cada $s\in I, \;\alpha'(s)$ é um vetor unitário, que denotamos por $t(s),$ isto é, $$t(s)=\alpha'(s)=(x'(s),y'(s)).$$
+
+\begin{definition}
+O vetor $t(s)$ é chamado o \emph{vetor tangente} à curva $\alpha$ em $\alpha(s)$.
+\end{definition}
+
+\noindent\hspace{0,7cm}Seja $n(s)$ um vetor unitário ortogonal a $t(s),$ tal que a base ortogonal de $\R^2$ formada por $t(s)$ e $n(s)$ têm a mesma orientação que a base $e_1=(1,0),\;e_2=(0,1)$ de $\R^2$ (ver Figura \ref{referencial de frenet}), isto é, $$n(s)=(-y'(s),x'(s)).$$
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.6]{def241.pdf}\caption{Referencial de Frenet\label{referencial de frenet}}
+\end{figure}
+
+\begin{definition}
+O conjunto de vetores $t(s)$ e $n(s)$ é chamado \emph{referencial de Frenet} da curva $\alpha$ em $s$.
+\end{definition}
+
+\begin{example}
+A curva $\alpha(s)=(\cos s,\sen s)$, $s\in(0,2\pi)$ é parametrizada pelo comprimento de arco. Temos:
+$$t(s)=\alpha'(s)=(-\sen s,\cos s)$$ e
+$$n(s)=(-\cos s,-\sen s).$$
+A Figura \ref{refefrenet} ilustra o Referencial de Frenet em alguns pontos de $\alpha$.
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.6]{refefrenet.pdf}\caption{Referencial e Frenet em alguns pontos da circunferência de raio 1\label{refefrenet}}
+\end{figure}
+\end{example}
+
+\begin{definition}
+A \emph{reta normal} a $\alpha$ em $s_0$ é a reta que passa por $\alpha(s_0)$ na direção de $n(s_0)$.
+\end{definition}
+
+\noindent\hspace{0,7cm}Observamos que $t(s)$ e $n(s)$ são funções de $I$ em $\R^2$, diferenciáveis de classe $C^\infty$ e para cada $s\in I,$ os vetores de $\R^2,$ $t'(s)$ e $n'(s),$ podem ser escritos como combinação linear de $t(s)$ e $n(s).$ Como $t(s)$ é unitário, segue que $t'(s)$ é ortogonal a $t(s)$ e portanto $t'(s)$ é proporcional a $n(s).$
+
+\begin{definition}
+Este fator de proporcionalidade, denotado por $k(s)$, é chamado \emph{curvatura de $\alpha$} em $s$, isto é, $$t'(s)=k(s)n(s).$$
+\end{definition}
+
+\noindent\hspace{0,7cm}Considerando a curva $\alpha(s)=(x(s),y(s)), \;s\in I,$ segue da definição que,
+\begin{eqnarray*}
+   k(s)&=&\langle t'(s),n(s)\rangle\\
+       &=&\langle\alpha''(s),n(s)\rangle\\
+       &=&\langle( x''(s),y''(s)),(-y'(s),x'(s))\rangle\\
+       &=&-x''(s)y'(s)+y''(s)x'(s).
+\end{eqnarray*}
+\noindent\hspace{0,7cm}Analogamente como $n(s)$ é unitário, segue que $n'(s)$ é ortogonal a $n(s)$ e portanto $n'(s)$ é proporcional a $t(s).$ Como
+\begin{eqnarray*}
+\langle n'(s),t(s)\rangle&=&\langle(-y''(s),x''(s)),( x'(s),y'(s))\rangle\\
+                         &=&-x'(s)y''(s)+x''(s)y'(s)\\
+                         &=&\langle(x''(s),y''(s)),( y'(s),-x'(s))\rangle\\
+                         &=&\langle t'(s),-n(s)\rangle\\
+                         &=&-\langle t'(s),n(s)\rangle\\
+                         &=&-k(s)
+\end{eqnarray*}\\*
+concluímos que $$n'(s)=-k(s)t(s).$$
+
+\begin{definition}
+As equações
+$$t'(s)=k(s)n(s),$$
+$$n'(s)=-k(s)t(s)$$
+são chamadas as \emph{fórmulas de Frenet} de uma curva plana.
+\end{definition}
+
+\noindent\hspace{0,7cm}Observamos que $t'(s)$ e $n(s)$ são paralelos e que $|t'(s)|=|k(s)|$ pois $|n(s)|=1,$ ou seja,
+$$|k(s)|=|\alpha''(s)|.$$
+Como $\dfrac{{\left\langle {t'(s),n(s)} \right\rangle }}{{\left| {t'(s)} \right|\left| {n(s)} \right|}} = \cos \theta,$ sendo $\theta$ a medida do ângulo entre $t'(s)$ e $n(s)$ (que é $0$ o $\pi$), concluímos que $k(s)>0$ quando $t'(s)$ e $n(s)$ possuem mesmo sentido e $k(s)<0$ caso contrário.
+
+\noindent\hspace{0,7cm}Geometricamente, a curvatura $k(s)$ indica a taxa de variação instantânea da direção do vetor tangente no ponto $\alpha(s)$, ou então, a velocidade com que o vetor tangente muda de direção. De fato, dados $s,s+h\in(a,b)$ temos
+$$\alpha ''(s) = \mathop {\lim }\limits_{h \to 0} \frac{{\alpha '(s + h) - \alpha '(s)}}{h}.$$
+
+
+\begin{example}
+Seja $\alpha(s)$ uma curva regular parametrizado pelo comprimento de arco cujo traço é uma reta. Então a curvatura é identicamente nula. De fato, seja
+$$\alpha(s)=(as+x_0,bs+y_0),\; s\in I,$$
+onde $a$ e $b$ são constantes e $a^2+b^2=1.$ Como $t(s)=\alpha'(s)$ é constante, segue que $t'(s)=0$ e portanto $k(s)=0,\;\forall s \in I.$
+\end{example}
+
+\begin{example}\label{raio}
+Considere a curva
+$$\alpha(s)=\left(a+b\cos\frac{s}{b},c+b\sen\frac{s}{b}\right),\;s\in\R,\;b>0,$$
+cujo traço é uma circunferência d centro $(a,c)$ e raio $b.$ Neste caso
+$$t(s)=\left(-\sen\frac{s}{b},\cos\frac{s}{b}\right),$$
+$$n(s)=\left(-\cos\frac{s}{b},-\sen\frac{s}{b}\right).$$
+Segue que
+$$k(s)=\langle t'(s),n(s)\rangle=\frac{1}{b}.$$
+\noindent\hspace{0,7cm}Consideremos uma reparametrização de $\alpha,$ dada por
+$$\beta(s)=\left(a+b\cos\frac{s}{b},c-b\sen\frac{s}{b}\right).$$
+Então a curva será igual a $-\dfrac{1}{b}$ (ver Figura \ref{curvatura}).
+\end{example}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.5]{ex242.pdf}\caption{Curvatura de $\beta(s)$.\label{curvatura}}
+\end{figure}
+\noindent\hspace{0,7cm}Observamos que o sinal da curvatura depende da orientação da curva. Mais adiante veremos a interpretação geométrica do sinal da curvatura.
+
+\noindent\hspace{0,7cm}O referencial de Frenet e a curvatura foram definidos para curvas regulares parametrizadas por comprimento de arco. Como vimos na Proposição \ref{param.pelo.compr.de.arco}, toda curva regular admite uma tal reparametrização, o próximo resultado expressa a curvatura de uma curva regular e não necessariamente parametrizado pelo comprimento de arco. A seguir, vamos considerar o referencial de Frenet e a curvatura de uma curva regular com qualquer parâmetro.
+
+\noindent\hspace{0,7cm}Seja $\alpha:I\to\R^2$ uma curva regular de parâmetro qualquer $r\in I$. Consideremos $\beta:J\to\R^2$ uma reparametrização de $\alpha$  pelo comprimento de arco $s$, isto é, $\beta(s(r))=\alpha(r).$ Se $t(s)$, $n(s)$ é o referencial de Frenet de $\beta(s)$ e $k(s)$ é a curvatura, então diremos que $t(r)=t(s(r))$, $n(r)=n(s(r))$ é o referencial de Frenet de $\alpha$, e $k(r)=k(s(r))$ é a curvatura.
+
+\begin{proposition}
+Seja $\alpha(r)=(x(r),y(r)),\;r\in I,$ uma curva regular. Então:
+$$t(r)=\frac{(x',y')}{\sqrt{(x')^2+(y')^2}},$$
+$$n(r)=\frac{(-y',x')}{\sqrt{(x')^2+(y')^2}},$$
+$$k(r)\frac{(-x'',y')}{((x')^2+(y')^2)^{\frac{3}{2}}}.$$
+\end{proposition}
+
+\begin{proof}Seja $\beta(s)$ uma reparametrização de $\alpha$ por comprimento de arco. Derivando $\beta(s(r))=\alpha(r)$, temos
+\begin{equation}\label{1}
+\frac{d\beta}{ds}\frac{ds}{dr}=\alpha'(r)
+\end{equation}
+e
+\begin{equation}\label{2}
+\frac{d^2\beta}{ds^2}\left(\frac{ds}{dr}\right)^2+\frac{d\beta}{ds}\frac{d^2s}{dr^2}=\alpha''(r)
+\end{equation}
+como
+$$s(r) = \int {\left| {\alpha '(r)} \right|dr}$$
+onde
+\begin{equation}\label{3}
+\frac{ds}{dr}=|\alpha'(r)|=\sqrt {\left\langle {\alpha '(r),\alpha '(r)} \right\rangle }={\left\langle {\alpha '(r),\alpha '(r)} \right\rangle ^{\tfrac{1}{2}}},
+\end{equation}
+e portanto,
+\begin{eqnarray}\label{4}
+\frac{{{d^2}s}}{{d{r^2}}} &=& \frac{1}{2}{\left\langle{\alpha'(r),\alpha'(r)}\right\rangle^{-\tfrac{1}{2}}}\cdot(\left\langle{\alpha''(r),\alpha'(r)} \right\rangle+\left\langle{\alpha'(r),\alpha''(r)}\right\rangle ) \nonumber\\
+                          &=&\frac{{\left\langle{\alpha'(r),\alpha''(r)}\right\rangle}}{{{{\left\langle{\alpha'(r),\alpha'(r)}\right\rangle}^{\tfrac{1}{2}}}}}
+                          =\frac{\langle\alpha'(r),\alpha''(r)\rangle}{|\alpha'(r)|}.
+\end{eqnarray}
+Considerando que $\alpha (r) =(x(r),y(r))$, segue de (\ref{1}) e (\ref{3}) que
+$$t(r)=\frac{\alpha'(r)}{\left|\alpha'(r)\right|}=\frac{(x',y')}{\sqrt{(x')^2+(y')^2}}.$$Pela definição de vetor normal temos
+$$n(r)=\frac{(-y',x')}{\sqrt{(x')^2+(y')^2}}.$$Como
+$$k(s(r))=\left\langle\frac{d^2\beta}{ds^2}(s(r)),n(r)\right\rangle,$$concluímos usando (\ref{1}) a (\ref{4}) que
+$$k(r)=\frac{-x''y'+x'y''}{((x')^2+(y')^2)^\frac{^3}{2}} = \frac{{\left\langle {t'(r),n(r)} \right\rangle }}{{{{\left| {t(r)} \right|}^3}}}.$$
+\end{proof}
+
+\begin{example}
+Consideremos a espiral logarítmica
+$$\alpha(r)=(e^r\cos r,e^r\sen r),\;r\in\R.$$
+Então,
+$$t(r) = \alpha '(r) = ({e^r}(\cos r - \sen r),{e^r}(\sen r + \cos r)),$$
+\begin{eqnarray*}
+t'(r) = \alpha ''(r) &=& ({e^r}(\cos r - \sen r) + {e^r}( - \sen r - \cos r),{e^r}(\sen r + \cos r) + {e^r}(\cos r - \sen r))\\
+                     &=& ( - 2{e^r}\sen r,2{e^r}\cos r),
+\end{eqnarray*}
+\begin{eqnarray*}
+n(r)&=&( - y'(r),x'(r))\\
+    &=& ( - {e^r}(\sen r + \cos r),{e^r}(\cos r - \sen r)),
+\end{eqnarray*}
+\begin{eqnarray*}
+\left| {t(r)} \right|&=&\sqrt {{e^{2r}}({{\cos }^2}r - 2\sen r\cos r + {{\sen }^2}r) + {e^{2r}}({{\sen }^2}r + 2\sen r\cos r + {{\cos }^2}r)}\\
+                     &=&{e^r}\sqrt 2.
+\end{eqnarray*}
+Logo,
+\begin{eqnarray*}
+k(r)&=&\frac{{\left\langle{(-2{e^r}\sen r,2{e^r}\cos r),(-{e^r}(\sen r+\cos r),{e^r}(\cos r-\sen r))}\right\rangle}}{{{{\left({{e^r}\sqrt2}\right)}^3}}}\\
+    &=&\frac{{ - 2{e^{2r}}({{\sen }^2}r + \sen r\cos r + 2{e^{2r}}({{\cos }^2}r - \cos r\sen r))}}{{{e^{3r}}2\sqrt 2 }}\\
+    &=&\frac{{2{e^{2r}}}}{{{e^{3r}}2\sqrt 2 }}\\
+    &=&\frac{1}{{{e^r}\sqrt 2 }}.
+\end{eqnarray*}
+\end{example}
+
+\begin{example}
+Consideremos a parábola
+$$y = {x^2} + 2x + 1.$$
+Façamos $x=r$ e
+$$y = {r^2} + 2r + 1.$$
+Assim,
+$$\alpha (r) = (r,{r^2} + 2r + 1),\,\,\,\,r \in {\R},$$
+é de classe $C^\infty$ e
+$$\alpha'(r)=(1,2r+2)\neq(0,0), \,\,\,\forall r \in {\R},$$
+ou seja, $\alpha$ é regular. Temos
+\[\left\{ \begin{gathered}
+  t(r) = \alpha '(r) = (1,2t + 2) \hfill \\
+  t'(r) = \alpha ''(r) = (0,2) \hfill \\
+  n(r) = ( - y'(r),x'(r)) = ( - 2r - 2,1) \hfill \\
+\end{gathered}  \right.\]
+Logo,
+\[k(r) = \frac{{\left\langle {(0,2),( - 2r - 2,1)} \right\rangle }}{{{{\left( {\sqrt {{1^2} + {{(2r + 2)}^2}} } \right)}^3}}} = \frac{2}{{{{\left( {\sqrt {4{r^2} + 8r + 5} } \right)}^3}}}.\]
+\end{example}
+
+
+\section{Interpretação Geométrica do Sinal da Curvatura}
+\hspace{0,7cm}A seguir veremos a interpretação geométrica do sinal da curvatura. Seja \linebreak $\alpha(s)=(x(s),y(s)),\;s\in I,$ uma curva regular parametrizado pelo comprimento de arco. Como o vetor tangente $t(s)=\alpha'(s)$ é unitário temos que $\alpha''(s)$ é ortogonal a $\alpha'(s).$ Fixemos $s_0\in I$ e suponhamos que $k(s_0)\neq0.$ Observamos que a reta tangente a $\alpha$ em $s_0,$
+$$T(s)=\alpha(s_0)+(s-s_0)\alpha'(s_0),$$ divide o plano em dois semiplanos.
+
+%\newpage
+
+\noindent\hspace{0,7cm}Considerando a expansão de $\alpha(s)$ em séries de Taylor, em torno de $s_0$ temos
+$$\alpha(s)=\alpha(s_0)+(s-s_0)\alpha'(s_0)+\frac{(s-s_0)^2}{2}\alpha''(s_0)+R(s),$$
+onde $R(s)$ é uma função vetorial, tal que $\displaystyle\lim_{s\to s_0}\frac{R(s)}{(s-s_0)^2}=0.$ Portanto
+$$\alpha(s)-T(s)=\frac{(s-s_0)^2}{2}\alpha''(s_0)+R(s).$$
+
+\noindent\hspace{0,7cm}Como $\alpha(s)-T(s)$ é um vetor no sentido do semiplano que contém $\alpha(s),$ segue da última relação que para todo $s,$ suficientemente próximo de $s_0$, $\alpha''(s_0)$ tem sentido do semiplano que contém os pontos $\alpha(s).$
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=1]{intergeom.pdf}\caption{Interpretação geométrica do sinal da curvatura.\label{intergeom}}
+\end{figure}
+
+\noindent\hspace{0,7cm}Como $k(s_0)=\langle\alpha''(s_0),n(s_0)\rangle,$ concluímos que se $k(s_0)>0,$ então $n(s_0)$ tem o mesmo sinal de $\alpha''(s_0),$ e se $k(s_0)<0$, então $\alpha''(s_0)$ e $n(s_0)$ têm sentidos opostos(ver Figura \ref{intergeom}).
+
+
+\section{Raio de Curvatura e Círculo Osculador}
+\noindent\hspace{0,7cm}No Exemplo \ref{raio}  vimos que, a menos de sinal, a curvatura de uma circunferência de raio $r$ é igual a $\dfrac{1}{r}$, o que comprova a nossa intuição pois no caso da circunferência pensamos, naturalmente, na recíproca do raio como medida da curvatura.
+Se $\alpha(s)$ é uma curva regular parametrizada pelo comprimento de arco com curvatura de $k(s)\neq0,$ $\forall s\in (a,b).$ O número real positivo $\rho (s) = \dfrac{1}{{\left| {k(s)} \right|}}$ é denominada \emph{raio de curvatura} de $\alpha$ em $s.$\\
+Consideremos a equação da reta normal a $\alpha$  em $s_0$ dada por
+\[{{h}_{{{s}_{0}}}}(r)=\alpha ({{s}_{0}})+rn({{s}_{0}}).\]
+Suponhamos que $k(s_0)>0$ e tomemos o ponto $c({{s}_{0}})={{h}_{{{s}_{0}}}}(\rho ({{s}_{0}}))$ na reta ${{h}_{{{s}_{0}}}},$ ou seja,
+\begin{eqnarray*}
+c({{s}_{0}})&=&\alpha ({{s}_{0}})+\rho ({{s}_{0}})n({{s}_{0}})\\
+            &=&\alpha (s_0) + \dfrac{1}{{k(s_0)}}n(s_0).
+\end{eqnarray*}
+O ponto $c(s_0) = \alpha (s_0) + \dfrac{1}{{k(s_0)}}n(s_0)$ é chamado de \emph{centro de curvatura} de $\alpha$ em $s_0.$\\
+O círculo tangente a $\alpha$ em $s_0$ de $c(s_0)$ e raio $\rho(s_0)$ é chamado de \emph{círculo osculador} à curva $\alpha$ em $s_0$ (ver Figura \ref{circulo-osculador})
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.9]{circulo-osculador.pdf}\caption{Raio de curvatura e círculo osculador.\label{circulo-osculador}}
+\end{figure}
+
+\section{Evolutas e Involutas}
+\begin{definition}
+A curva formada por todos os centros de curvatura da curva $\alpha$ é chamada de \emph{evoluta} de $\alpha$ e é dada por
+\[\beta (s)=\alpha (s)+\frac{1}{k(s)}n(s),\,\,\,s\in (a,b),\]
+cujas retas tangentes são ortogonais à curvas $\alpha$ (ver Figura \ref{evol}).
+\end{definition}
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.8]{evol.pdf}\caption{Involutas e Evolutas.\label{evol}}
+\end{figure}
+
+\noindent\hspace{0,7cm}Observamos que o ângulo entre duas curvas regulares que interceptam é definido como sendo o ângulo entre os vetores tangentes às curvas no ponto de intersecção.
+
+\begin{definition}
+Uma \emph{involuta} de uma curva regular $\beta$ é uma curva que é ortogonal às retas tangentes de $\beta$.
+Portanto, se $\beta$ é evoluta de $\alpha$, então $\alpha$ é uma involuta de $\beta.$
+\end{definition}
+
+\begin{proposition}
+Seja $\alpha :(a,b)\to {{\mathbb{R}}^{2}}$ uma curva regular de classe ${{C}^{k}},k\ge 3,$ parametrizada pelo comprimento de arco com $k(s)\ne 0,\,\,\forall s\in (a,b).$ Considere $\beta :(a,b)\to {{\mathbb{R}}^{2}}$ a evoluta de $\alpha$. Então,
+\begin{enumerate}
+  \item [(a)] $\beta$ é classe ${{C}^{k-2}}.$
+  \item [(b)] Se $k'(s)\ne 0,\,\,\forall s\in (a,b),$ então $\beta$ é regular.
+  \item [(c)] Na hipótese de (b), as retas tenentes a $\beta$  são as retas normais a $\alpha.$
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}~
+\begin{enumerate}
+  \item [(a)] Temos que: \[\alpha (s)=(x(s),y(s));\]
+                         \[n(s)=(-y'(s),x'(s));\]
+                         \[k(s)=\left\langle \alpha ''(s),n(s) \right\rangle ,\]
+são aplicações de classe ${{C}^{k}},{{C}^{k-1}}$ e ${{C}^{k-2}},$ respectivamente, pois $x(s)$ e $y(s)$ são de classe ${{C}^{k}}.$ Logo, $\beta (s)=\alpha (s)+\dfrac{1}{k(s)}n(s)$ é de classe $C^{k-2}.$
+  \item [(b)] Temos que,
+\begin{eqnarray*}
+  \beta '(s)&=&\alpha '(s)-\frac{k'(s)}{k{{(s)}^{2}}}n(s)+\frac{n'(s)}{k(s)}\\
+            &=& t(s)-\frac{k'(s)}{k{{(s)}^{2}}}n(s)-\frac{k(s)}{k(s)}t(s)\\
+            &=& \frac{-k'(s)}{k{{(s)}^{2}}}n(s).
+\end{eqnarray*}
+Como $k'(s)\neq0$, $\forall s\in(a,b),$ temos $\beta'(s)\neq(0,0),$ ou seja, $\beta$ é regular.
+  \item [(c)] A reta tangente a $\beta$ em $s$ é dada por
+\begin{eqnarray*}
+  {{G}_{s}}(r)&=&\beta (s)+r\beta '(s)\\
+              &=&\alpha (s)+\frac{1}{k(s)}n(s)-r\frac{k'(s)}{k{{(s)}^{2}}}n(s) \\
+              &=&\alpha (s)+\left( \frac{1}{k(s)}-r\frac{k'(s)}{k(s)^2} \right)n(s),
+\end{eqnarray*}
+que é reta normal a $\alpha$ em $s.$
+\end{enumerate}
+\end{proof}
+
+\begin{example}
+Se o traço de uma curva $\alpha$ descreve um círculo de raio $r$ e centro $C$, sua evoluta é a curva constante dada por $\beta(s)=C$.\\
+De fato, parametrizando a curva $\alpha$ por
+\[\alpha (s) = C + \left( {r\cos \frac{s}{r},r\sen \frac{s}{R}} \right),\,\,\,s \in [0,2\pi ],\]
+temos que $k(s)=\dfrac{1}{r}$ e portanto,
+\[\beta (s) = \alpha (s) + r\left( { - \cos \frac{s}{r}, - \sen \frac{s}{R}} \right) = C.\]
+\end{example}
+
+\begin{example}
+Considere a elipse $\alpha:[0,2\pi]\to\R^2$, definida por
+\[\alpha (t) = (a\cos t,b\sen t).\]
+A curvatura de $\alpha$ é dada por
+\[k(t) = \frac{{ab}}{{{{({a^2}{{\sen }^2}t + {b^2}\cos^2 t)}^{\tfrac{3}{2}}}}} \ne 0.\]
+A evoluta de $\alpha$, pela equação (\ref{ev}) é dada por
+\begin{eqnarray*}
+\beta (t) &=& (a\cos t,b\sen t) + \frac{{{a^2}{{\sen }^2}t + {b^2}{{\cos }^2}t}}{{ab}}( - b\cos t, - a\sen t)\\
+          &=& \left( {\frac{{{a^2} - {b^2}}}{a}{{\cos }^3}t,\frac{{{b^2} - {a^2}}}{b}{{\sen }^3}t} \right).
+\end{eqnarray*}
+O traço da evoluta da elipse é descrita pelo astróide $(ax)^{\frac{2}{3}}+(by)^{\frac{2}{3}}=(a^2-b^2)^{\frac{2}{3}},$ que não é regular nos pontos $\beta(t),$ com $t=0$, $\dfrac{\pi}{2}$, $\pi$ e $\dfrac{3\pi}{2}$ (ver Figura \ref{elipseevoluta}).
+\begin{figure}[ht]\centering
+\includegraphics[scale=0.82]{elipseevoluta.pdf}\caption{Elipse e sua evoluta.\label{elipseevoluta}}
+\end{figure}
+\end{example}
+
+\begin{example}
+Considere a ciclóide dada pelo traço da curva $\alpha$, definida por
+\[\alpha (t) = (t - \sen t,1 - \cos t),\,\,\,t \in (0,2\pi ).\]
+Sua curvatura é dada por
+\[k(t) = \frac{{\cos t - 1}}{{{{(2 - 2\cos t)}^{\tfrac{3}{2}}}}} \ne 0.\]
+A evolua de $\alpha$ é a curva definida por
+\[\beta (t) = (t - \sen t,1 - \cos t) + \frac{{2 - 2\cos t}}{{\cos t - 1}}( - \sen t,1 - \cos t) = (t + \sen t,\cos t - 1).\]
+Observe que $\alpha (t + \pi ) = \beta (t) + (\pi  + 2).$ Logo, a menos de uma translação, a evoluta de $\alpha$ é a propria ciclóide.
+\end{example}
+
+\begin{example}
+Consideremos a espiral logarítmica
+\[\alpha (t) = ({e^t}\cos t,{e^t}\sen t),\,\,\,t \in \mathbb{R}.\]
+Vimos que a curvatura de $\alpha$ é $k(t) = {\left( {{e^t}\sqrt 2 } \right)^{ - 1}}$ e independe de $\alpha$ estar parametrizada pelo comprimento de arco ou não. Para obtermos a equação da evoluta, é preciso que o vetor normal seja unitário (assim o raio de curvatura é o raio do círculo oscular). Assim:
+\[n(t) = ( - {e^t}(\sen t + \cos t),{e^t}(\cos t - \sen t)) \Rightarrow \left| {n(t)} \right| = {e^t}\sqrt 2 .\]
+Logo,
+\begin{eqnarray*}
+\beta (t) &=& \alpha (t) + \frac{1}{{k(t)}}\frac{{n(t)}}{{\left| {n(t)} \right|}}\\
+          &=& ({e^t}\cos t,{e^t}\sen t) + {e^t}\sqrt 2 \frac{{( - {e^t}(\sen t + \cos t),{e^t}(\cos t - \sen t))}}{{{e^t}\sqrt 2 }}\\
+          &=& ({e^t}\sen t,{e^t}\cos t),
+\end{eqnarray*}
+ou seja, a evoluta de uma espiral logarítmica é, também, uma espiral logarítmica (ver Figura \ref{evolespiral}).
+\begin{figure}[ht]\centering
+\includegraphics[scale=1.3]{evolespiral.pdf}\caption{A evoluta de uma espiral logarítmica é outra espiral logarítmica.\label{evolespiral}}
+\end{figure}
+\end{example}
+
+
+\section{Interpretação Geométrica da Curvatura}
+\noindent\hspace{0,7cm}Seja $\alpha:(a,b)\to\R^2$ uma curva regular parametrizada pelo comprimento de arco e $\theta:(a.b)\to\R$ a função definida por $\theta(s)=$ \emph{"ângulo entre o vetor $\alpha'(s)$ e o vetor $w = (\cos \lambda ,\sen \lambda )$"}, ou seja, $\alpha '(s) = (\cos (\theta (s) + \lambda ),\sen (\theta (s) + \lambda ))$ (ver Figura \ref{intergeo}).
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.8]{intergeo.pdf}\caption{A curvatura de $\alpha$ pode ser vista como taxa de varição do ângulo $\theta$.\label{intergeo}}
+\end{figure}
+
+\noindent Afirmamos que curvatura de $\alpha$ mede a variação da função $\theta(s)$, isto é,
+\begin{equation}\label{umaoutra}
+    k(s) = \theta '(s).
+\end{equation}
+De fato, temos
+\[\alpha '(s) = (\cos (\theta (s) + \lambda ),\sen (\theta (s) + \lambda ))\Rightarrow\]
+\[\alpha ''(s) = ( - \sen (\theta (s) + \lambda )\theta '(s),\cos (\theta (s) + \lambda )\theta '(s))=t'(s)\]
+e
+\[n(s) = ( - \sen (\theta (s) + \lambda ),\cos (\theta (s) + \lambda )).\]
+Logo,
+\begin{eqnarray*}
+k(s) &=& \left\langle {t'(s),n(s)} \right\rangle\\
+     &=& \left\langle {( - \sen (\theta (s) + \lambda )\theta '(s),\cos (\theta (s) + \lambda )\theta '(s)),( - \sen (\theta (s) + \lambda ),\cos (\theta (s) + \lambda ))} \right\rangle\\
+     &=& \theta '(s)({\sen ^2}(\theta (s) + \lambda ) + {\cos ^2}(\theta (s) + \lambda ))\\
+     &=&\theta'(s).
+\end{eqnarray*}
+Observamos que
+\[\alpha '(s) = (\cos (\theta (s) + \lambda ),\sen (\theta (s) + \lambda ))\Rightarrow\]
+\[\alpha (s) = \left( {\int_{{s_0}}^s {\cos (\theta (t) + \lambda )} dt + {x_0},\int_{{s_0}}^s {\sen (\theta (t) + \lambda )} dt + {y_0}} \right)\]
+para algum $s_0\in(a,b)$ e $\lambda,x_0,y_0\in\R.$
+
+
+
+\section{Teorema Fundamental das Curvas Planas}
+\noindent\hspace{0,7cm}Segundo este teorema, é possível reconstruir uma curva plana
+a partir de sua função de curvatura.
+\begin{theorem}(\textbf{ Teorema Fundamental das Curvas Planas})
+\begin{enumerate}
+  \item[(i)] Dada uma função diferenciável $k(s)$, $s\in I\subset\R,$ existe uma curva regular $\beta(s),$ parametrizada pelo comprimento de arco $s$, cuja curvatura é $k(s).$
+  \item[(ii)] A curva $\alpha(s)$ acima é única quando fixamos $\alpha(s_0)=p_0$ e $\alpha'(s_0=v_0),$ onde $v_0$ é um vetor unitário de $\R^2.$
+  \item[(iii)] Se duas curvas $\alpha(s)$ e $\beta(s)$ têm a mesma curvatura, então $\alpha(s)$ e $\beta(s)$ são congruentes e diferem por sua posição no plano, isto é, existe uma rotação $L$ e uma translação $T$ em $\R^2$ tal que $\alpha (s) = (L \circ T)(\beta (s)).$
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}~
+\begin{enumerate}
+\item[(i)]Vimos na Equação \ref{umaoutra} que $k(s)=\theta'(s)$ sendo \[\alpha '(s) = (\cos (\theta (s) + \lambda ),\sen (\theta (s) + \lambda)),\]cuja solução geral é dada por uma curva $\alpha:(a,b)\to\R^2$ de classe $C^j,$ $j\geq3,$ parametrizada pelo comprimento de arco, definida por
+\[\alpha (s) = (x(s),y(s)) = \left( {\int_{{s_0}}^s {\cos (\theta (t) + \lambda )} dt + {x_0},\int_{{s_0}}^s {\sen (\theta (t) + \lambda )} dt + {y_0}} \right),\] sendo $s_0\in(a,b)$ e $\lambda,x_0,y_0\in\R.$
+Esta curva $\alpha$ satisfaz as condições exigidas: está parametrizada pelo comprimento de arco pois $\alpha'(s)=(\cos\theta(s),\sen\theta(s));$ como este vetor faz um ângulo $\theta(s)$ com o eixo $OX$, pela Equação \ref{umaoutra} a sua curvatura com sinal é igual a $\theta'(s)=f(s)$.
+
+    \item[(ii)]Fixados $\alpha(s_0)=P=(x_0,y_0)$ e $\alpha'(s_0)=v=(\cos(\theta(s_0)+\lambda),\sen(\theta(s_0)+\lambda)$, a solução da EDO do item (i) é única.
+    \item[(iii)]Sejam $\alpha,\beta:(a,b)\to\R^2$ curvas regulares de mesma curvatura, ou seja,\linebreak ${k_\alpha }(s) = {k_\beta }(s).$ Logo, $\theta {'_\alpha }(s) = \theta {'_\beta }(s),$
+        sendo $\theta {'_\alpha }= \theta {'_\beta },$ conforme a demonstração do item (i). Deste modo, ${\theta _\alpha }(s) = {\theta _\beta }(s) +\lambda .$ Assim, os vetores tangentes unitários de $\alpha$ são obtidos dos de $\beta$ rotacionados por $\lambda$ nos pontos correspondentes, ou seja $\alpha '(s) = {L_\lambda }(\beta '(s)).$ Mas $L_\lambda$ é linear, logo, \[{L_\lambda }(\beta '(s)) = d{({L_\lambda })_{\beta (s)}}(\beta '(s)) = ({L_\lambda } \circ \beta )'(s).\]
+Assim,
+\[\alpha '(s) = ({L_\lambda } \circ \beta )'(s)\]
+e, portanto,
+\[\alpha (s) = ({L_\lambda } \circ \beta )(s) + v\]
+com $v\in\R^2$, ou seja,
+$\alpha (s) = ({T_v} \circ {R_\lambda } \circ \beta )(s).$
+Desta forma, $\alpha$  é obtida de $\beta$ por meio de uma rotação composta com translação e, portanto, são congruentes.
+\end{enumerate}
+\end{proof}
+
+\section{Determinando Curvas Regulares a Partir da Curvatura}
+\noindent\hspace{0,7cm}A demonstração do Teorema Fundamental das Curvas Planas fornece-nos um modo simples de determinar uma curva a partir de sua curvatura.\\
+Seja $k:(a,b) \to {\R}$ função de classe ${C^k},k \geqslant 1.$ \\
+Para determinar uma curva seguimos os passos:\\
+(1) Determinamos $\theta (s) = \displaystyle\int_{{s_0}}^s {k(t)dt} .$\\
+(2) Definimos $\alpha :(a,b) \to {{\R}^2}$ por $\alpha (s) = (x(s),y(s))$
+tal que
+\[x(s)=\int_{{{s}_{0}}}^{s}{\cos \theta (t)dt}\]e
+\[y(s)=\int_{{{s}_{0}}}^{s}{\sen \theta (t)dt}.\]
+Para determinar uma curva com \(\alpha ({{s}_{0}})=({{x}_{0}},{{y}_{0}})\) e $\alpha '({{s}_{0}})=({{u}_{0}},{{v}_{0}})$ fazemos
+\[x(s)={{x}_{0}}+\int_{{{s}_{0}}}^{s}{\cos (\theta (t)}+\lambda )dt\]
+e
+\[y(s)={{y}_{0}}+\int_{{{s}_{0}}}^{s}{\sen (\theta (t)}+\lambda )dt\]
+e, para determinar $\lambda$, fazemos
+\[\alpha '(s_0)=\left( \cos (\theta ({{s}_{0}})+\lambda ),\sen (\theta ({{s}_{0}})+\lambda \right)=\left( {{u}_{0}},{{v}_{0}} \right).\]
+
+\begin{example}
+As curvas de curvaturas constante são apenas (ou segmentos de retas) ou circunferência (ou arco de circunferências).\\
+De fato:\\
+Queremos $k(s)=k$ (constante).\\
+Fazemos $\theta (s)=\displaystyle\int_{{{s}_{0}}}^{s}{k(s)dt=\displaystyle\int_{{{s}_{0}}}^{s}{kdt}}=ks-k{{s}_{0}}.$\\
+Se $k\neq0,$ então
+\[x(s)=\int_{{{s}_{0}}}^{s}{\cos (kt-k{{s}_{0}})dt=}\frac{\sen \left( ks-k{{s}_{0}} \right)}{k}-\frac{\sen 0}{k}=\frac{\sen (ks-k{{s}_{0}})}{k};\]
+\[y(s)=\int_{{{s}_{0}}}^{s}{\sen (kt-k{{s}_{0}})dt=}\frac{-\cos \left( ks-k{{s}_{0}} \right)}{k}+\frac{\cos 0}{k}=\frac{-\sen (ks-k{{s}_{0}})}{k}+\frac{1}{k}.\]
+Logo,
+\[\alpha (s)=\left( \frac{1}{k}\sen (ks+k{{s}_{0}}),\frac{1}{k}-\frac{1}{k}\cos (ks-k{{s}_{0}}) \right),\]
+ou seja, as curvas de curvatura constante não nula $k$ são circunferência (ou arcos de circunferência) de raio $\dfrac{1}{|k|}$ (o sinal de $k$ determina a orientação da curva).\\
+Se $k=0$, então $\theta(s)=0$ e
+\[x(s)=\int_{{{s}_{0}}}^{s}{\cos 0dt=}s-{{s}_{0}};\]
+\[y(s)=\int_{{{s}_{0}}}^{s}{\sen 0dt}=0.\]
+Logo, $\alpha (s)=(s-{{s}_{0}}),$ ou seja, as curvas de curvatura constante nula são retas (ou segmentos retas).
+\end{example}
+
+\begin{example}
+Determinação das curvas regulares do plano que tem curvatura \linebreak $k(s)=\frac{1}{\sqrt{s}}; \,\,s>0.$\\
+Façamos
+\[\theta (s)=\int_{{{s}_{0}}}^{s}{\frac{1}{\sqrt{t}}}dt=2\sqrt{s}-2\sqrt{{{s}_{0}}}.\]
+Temos $\alpha ({{s}_{0}})=(0,0)\Rightarrow {{x}_{0}}={{y}_{0}}=0.$ Façamos $\lambda=0.$ Logo,
+\begin{eqnarray*}
+x(s)&=&\int_{{{s}_{0}}}^{s}{\cos }\left( 2\sqrt{t}-2\sqrt{{{s}_{0}}} \right)dt\\
+    &=&\sqrt{t}\sen \left( 2\sqrt{t}-2\sqrt{{{s}_{0}}} \right)\left| _{{{s}_{0}}}^{s} \right.-\int_{{{s}_{0}}}^{s}{\frac{1}{2\sqrt{t}}}\sen \left( 2\sqrt{t}-2\sqrt{{{s}_{0}}} \right)dt\\
+    &=&\sqrt{s}\sen \left( 2\sqrt{s}-2\sqrt{{{s}_{0}}} \right)+\frac{1}{2}\cos \left( 2\sqrt{s}-2\sqrt{{{s}_{0}}} \right)-\frac{1}{2}.
+\end{eqnarray*}
+Analogamente,
+\begin{eqnarray*}
+y(s)&=&\int_{{{s}_{0}}}^{s}{\sen }\left( 2\sqrt{t}-2\sqrt{{{s}_{0}}} \right)dt\\
+    &=&\sqrt{{{s}_{0}}}+\frac{1}{2}\sen \left( 2\sqrt{s}-2\sqrt{{{s}_{0}}} \right)-\sqrt{s}\cos \left( 2\sqrt{s}-2\sqrt{{{s}_{0}}} \right).
+\end{eqnarray*}
+Fazendo $u=2\sqrt{s}-2\sqrt{s}\Rightarrow s={{\left( \dfrac{u+2\sqrt{{{s}_{0}}}}{2} \right)}^{2}};\,\,\,u>-2\sqrt{{{s}_{0}}}$ e, tomando a reparametrização $\beta \left( u \right)=\alpha \circ \psi (u);$ sendo $\psi (u)={{\left( \dfrac{u+2\sqrt{{{s}_{0}}}}{2} \right)}^{2}}$ temos
+$$\beta (u)=\left( \frac{u+2\sqrt{{{s}_{0}}}}{2}\sen u+\frac{1}{2}\cos u-\frac{1}{2},\sqrt{{{s}_{0}}}+\frac{1}{2}\sen u-\frac{u+2\sqrt{{{s}_{0}}}}{2}\cos u \right)\Rightarrow$$
+$$\beta (u)=\left( -\frac{1}{2},\sqrt{{{s}_{0}}} \right)+\left( \frac{2\sqrt{{{s}_{0}}}}{2}\sen u+\frac{1}{2}\cos u,\frac{1}{2}\sen u-\frac{2\sqrt{{{s}_{0}}}}{2}\cos u \right)+\frac{1}{2}(u\sen u,-u\cos u).$$
+Para $s_0=\dfrac{1}{4}$, temos uma Espiral de Arquimedes (ver Figura \ref{espiral-de-ar}).\\
+Assim, \[\beta (u)=\left( \frac{\sen u(1+u)+\cos u-1}{2},\frac{\cos u(-1-u)+\sen u+1}{2} \right).\]
+Consequentemente, as curvas regulares do plano com curvatura $k(s)=\dfrac{1}{\sqrt{s}};\,\,\,s>0$ são Espirais de Arquimedes.
+\end{example}
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.55]{espiral-de-ar.pdf}\caption{Espiral de Arquimedes.\label{espiral-de-ar}}
+\end{figure}
+
+%----------------------------------------------------------------------------------
+\chapter{Curvas no Espaço}
+\noindent\hspace{0,7cm}Neste capítulo será desenvolvida a teoria local no espaço euclidiano $\R^3$. Assim como no capítulo 1 muitos conceitos básicos para curvas no espaço são introduzidos de modo análogo ao de curvas planas.
+
+\section{Curva Parametrizado Diferenciável}
+
+\begin{definition}
+Uma \emph{curva parametrizado diferenciável} de $\R^3$ é uma  aplicação \linebreak $\alpha: I \rightarrow \R^3$ tal que $\forall t \in I$ associa $\alpha (t) =(x(t),y(t),z(t))$ onde as funções $x,y,z: I \rightarrow \R$ são funções diferenciáveis de classe $C^{\infty}$, de um intervalo aberto $I\subset\R$ em $\R^3$. A variável $t\in I$  é dita parâmetro da curva e o subconjunto de $\R^3$ dos pontos $\alpha(t), $ $t\in I$, é chamado o traço da curva (ver Figura \ref{param-r3}).
+\end{definition}
+
+\noindent O \emph{traço} de $\alpha$ é a imagem da aplicação $\alpha$:
+\begin{center}
+\emph{Traço} $(\alpha)=Im (\alpha) = \{\alpha(t)\in\R^3:t\in I\subset\R^3\}.$
+\end{center}
+
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.86]{param-r3.pdf}\caption{Curva parametrizada diferenciavél no $\R^3$\label{param-r3}}
+\end{figure}
+
+\begin{example}\label{curvaplana}
+A aplicação
+\[\alpha (t)=({{x}_{0}}+at,{{y}_{0}}+bt,{{z}_{0}}+ct),\,\,t\in \mathbb{R},\]
+onde ${{a}^{2}}+{{b}^{2}}+{{c}^{2}}\ne 0$ é uma curva parametrizada diferenciável, cujo traço é uma linha reta passando pelo $(x_0,y_0,z_0)$ e paralela ao vetor de coordenadas $(a,b,c)$.
+\end{example}
+
+\begin{example}\label{exemplo-helice}
+A curva parametrizada diferenciável
+\[\alpha (t) = (a\cos t,a\sen t,bt)\]
+$t\in\R,a>0,b\neq0$ é a \emph{hélice circular}. O traço desta curva está contido no cilindro $x^2+y^2=a^2$. Se $\alpha(t_1)$ e $\alpha(t_2)$ são dois pontos que têm as duas primeiras coordenadas respectivamente iguais, então as terceiras coordenadas diferem por um múltiplo de $2\pi b$ (ver Figura \ref{helice}).
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.7]{helice.pdf}\caption{Hélice círcular.\label{helice}}
+\end{figure}
+\end{example}
+
+\begin{example}
+A aplicação $$\alpha (t) = ({e^t}\cos t,{e^t}\sen t,{e^t}),\,\,t \in {\R},$$
+é uma curva parametrizada diferenciável, que tem o traço da Figura \ref{espiral-conica}
+\begin{figure}[htb]\centering
+\includegraphics[scale=0.7]{espiral-conica.pdf}\caption{Espiral cônica no $\R^3$.\label{espiral-conica}}
+\end{figure}
+\end{example}
+
+\begin{definition}
+Uma curva parametrizada diferenciável $\alpha:I\to\R^3$ é dita plana se existe um plano de $\R^3$ que contém $\alpha(I)$.
+\end{definition}
+\noindent\hspace{0,7cm}O Exemplo \ref{curvaplana} é uma curva plana.
+
+\section{Vetor Tangente, Curva Regular, Mudança de Pa\-râ\-me\-tro}
+\noindent\hspace{0,7cm}As noções de vetor tangente, curva regular e mudança de parâmetro para curvas  são motivadas pelas mesmas considerações já vistas para curvas planas, portanto, serão introduzidas sem muitos comentários.
+
+
+\begin{definition}
+Seja $\alpha (t) = (x(t),y(t),z(t)),\,\,t \in I \subset {\R},$ uma curva parametrizada diferenciável. O \emph{vetor tangente} a $\alpha$ em $t\in I$ é o vetor $\alpha '(t) = (x'(t),y'(t),z'(t)).$
+\end{definition}
+
+\begin{definition}
+Uma curva parametrizada diferenciável $\alpha:I\to\R^3$ é dita \emph{regular} se $\forall t\in I$, $\alpha'(t)\neq(0,0,0).$
+\end{definition}
+
+\begin{definition}
+Seja $\alpha:I\to\R^3$ um curva regular. A \emph{reta tangente} à curva regular $\alpha$ em $t_0\in I$ é a reta que passa por $\alpha(t_0),$ na direção de $\alpha'(t_0)$, isto é, a reta dada pela função $$g(r) = \alpha ({t_0}) + r\alpha '({t_0}),\,\,r \in {\R}.$$
+\end{definition}
+
+\begin{definition}
+Sejam $I$ e $J$ intervalos abertos de $\R,$ $\alpha:I\to\R^3$ uma curva regular e $h:J\to I$ uma função diferenciável $C^\infty$, cuja derivada de primeira ordem é não-nula em todos os pontos de $J$ e tal que $h(J)=I.$ Podemos então considerar uma nova curva $\beta:J\rightarrow\R^3$, definida por
+$$\beta(t)=(\alpha \circ h)(t)=\alpha(h(t)).$$
+A curva $\beta$ é uma curva regular, que tem o mesmo traço que $\alpha$, chamada a \emph{reparametrização de $\alpha$ por $h$}. A função $h$ é dita \emph{mudança de parâmetro}.
+\noindent Pela regra da cadeia, temos que
+$$\beta'(t)=(x'(h(t))h'(t), y'(h(t))h'(t),$$
+ou ainda,
+$$\beta'(t)=(\alpha \circ h)'(t)=\alpha'(h(t))h'(t).$$
+\end{definition}
+
+\noindent\hspace{0,7cm}Observamos que, se $\beta$ é uma reparametrização de $\alpha$ por $h$, então $\alpha$ é uma reparametrização de $\beta$ por $h^{-1}.$
+
+\begin{definition}
+A \emph{orientação} de uma curva regular no $\R^3$ $\alpha$ é o sentido de percurso do traço de $\alpha$.
+\end{definition}
+
+\begin{example}
+A curva
+$$\alpha (s) = \left( {\cos \frac{s}{{\sqrt 2 }},\sen \frac{s}{{\sqrt 2 }},\frac{s}{{\sqrt 2 }}} \right),\,\,s \in {\R},$$
+é reparametrização da hélice circular
+$$\beta (t) = (\cos t,\sen t,t),$$
+pela mudança de parâmetro $h(s) = \dfrac{s}{{\sqrt 2 }},\,\,s \in {\R}.$
+\end{example}
+
+\begin{definition}
+Seja $\alpha(t),t\in I,$ uma curva regular de $\R^3$. O \emph{comprimento} do arco da curva $\alpha$ de $t_0$ a $t_1$ é dada por
+$$\int_{{t_0}}^{t_1} {\left| {\alpha '(t)} \right|} dt$$
+e a \emph{função comprimento de arco} da curva $\alpha$ a partir de $t_0$ é
+$$s(s) = \int_{{t_0}}^{t_1} {\left| {\alpha '(t)} \right|} dt.$$
+\end{definition}
+
+\begin{definition}
+Uma curva regular $\alpha:I\to\R^3$ é dita \emph{parametrizada pelo comprimento de arco} se para cada $t_0,t_1\in I, t_0\le t_1,$
+$$\int_{{t_0}}^{{t_1}} {\left| {\alpha '(t)} \right|} dt = {t_1} - {t_0}.$$
+\end{definition}
+
+\begin{proposition}\label{esta-param}
+Uma curva regular $\alpha:I\to\R^3$ está parametrizada pelo comprimento de arco se, e só se, $\forall t\in I, |\alpha'(t)|=1.$
+\end{proposition}
+
+\noindent\hspace{0,7cm}Como nas curvas planas, toda curva regular no espaço admite uma reparametrização pelo parâmetro comprimento de arco.
+
+\begin{proposition}\label{composta-beta}
+Sejam $\alpha:I\to\R^3$ uma curva regular e $s:I\to s(I)\subset\R$ a função comprimento de arco de $\alpha$ a partir de $t_0.$ Então, existe a função inversa $h$ de $s$, definida no intervalo aberto $J=s(I),$ e $\beta=\alpha\circ h$ é uma reparametrização de $\alpha$, onde $\beta$ está parametrizada pelo comprimento de arco.
+\end{proposition}
+\noindent\hspace{0,7cm}A composta  $\beta$ da Proposição \ref{composta-beta} é chamada \emph{reparametrização de $\alpha$ pelo comprimento de arco}.
+As demonstrações das Proposições \ref{composta-beta} e \ref{esta-param} são idênticas às do Capitulo I.
+
+\begin{example}
+Considere a \emph{hélice circular} $\alpha:\R\to\R^3$ definida por \[\alpha (t) = (\cos t,\sen t,t)\]
+\begin{enumerate}
+  \item [(i)]  $\alpha$ é regular.\\
+De fato, $x(t)=\cos t$, $y(t)=\sen t$, $z(t)=t$ são de $C^\infty$ e $$\alpha'(t)=(-\sen t,\cos t,1)\neq(0,0,0), \forall t\in\R.$$
+Portanto $\alpha$ é regular.
+  \item [(ii)] Reparametrização pelo comprimento de arco:\\
+Temos que
+$$s(t) = \int_{{t_0}}^t {\left| {\alpha '(u)} \right|du}  = \int_{{t_0}}^t {\sqrt 2 } du = \sqrt 2 t - \sqrt 2 {t_0}.$$
+A função inversa é dada por $h(s)=\dfrac{s+\sqrt{2}t_0}{\sqrt{2}}.$\\
+Logo,
+$$\beta (s) = \alpha  \circ h = \left( {\cos \left( {\frac{{s + \sqrt 2 {t_0}}}{{\sqrt 2 }}} \right),\sen \left( {\frac{{s + \sqrt 2 {t_0}}}{{\sqrt 2 }}} \right),\frac{{s + \sqrt 2 {t_0}}}{{\sqrt 2 }}} \right)$$
+é uma reparametrização de $\alpha$ pelo comprimento de arco, ou seja $|\beta'(s)| =1.$
+\end{enumerate}
+\end{example}
+
+
+\section{Teoria Local das Curvas; Fórmulas de Frenet}
+\noindent\hspace{0,7cm} No capítulo anterior, vimos que a teoria local das curvas planas está contida essencialmente nas formulas de frenet, que são obtidas considerando um diedro ortonormal associado naturalmente a uma curva plana. A seguir, vamos desenvolver um estudo análogo, considerando um triedro ortonormal associado a uma curva regular de $\R^3.$
+
+\begin{definition}
+A \emph{curvatura} de uma curva regular $\alpha:I\to\R^3$, parametrizada pelo comprimento de arco é definida por $$k(s) = \left| {\alpha ''(s)} \right|.$$
+\end{definition}
+
+\begin{remark}~
+\begin{enumerate}
+  \item[(i)] Curvaturas de curvas regulares no plano podem ser negativas, dependendo da orientação da mesma. No espaço, consideremos apenas curvatura positiva, ou seja, $k(s)>0,\forall s\in I.$
+  \item[(ii)] Uma curva regular no plano pode também ser vista como uma curva regular no espaço. Neste caso, as definições de curva coincidem. De foto, vimos na seção anterior que, quando uma curva regular plana está parametrizada pelo comprimento de arco, então $|k(s)|=|\alpha'(s)|.$
+  \item[(iii)] O vetor normal principal só é definido quando $k(t)\neq0.$
+  \item[(iv)] $n(s) = \dfrac{{\alpha ''(s)}}{{\left| {\alpha ''(s)} \right|}} = \dfrac{{\alpha ''(s)}}{{k(s)}} = \dfrac{{t'(s)}}{{k(s)}},$ isto é,
+$t'(s) = k(s)n(s)$  que é a 1ª \emph{Formula de Frenet} de $\alpha.$
+  \item[(v)] Geometricamente, a curvatura mede a velocidade com que os vetores tangentes à curva mudam de direção (como no plano).
+
+\end{enumerate}
+\end{remark}
+
+
+\begin{example}
+A curvatura de $$\alpha (t) = \left( {\cos \frac{t}{{\sqrt 2 }},\sen \frac{t}{{\sqrt 2 }},\frac{t}{{\sqrt 2 }}} \right),\,\,t \in {\R}$$
+é
+\end{example}
+
+
+
+
+
+
+
+
+\section{Aplicações}
+
+\section{Representação Canônica das Curvas}
+
+\section{Isometrias de $\R^3$; Teorema Fundamental das Curvas}
+
+\section{Teoria do Contato}
+
+\section{Involutas e Evolutas}
+\begin{example}
+\end{example}
+
+\begin{definition}
+\end{definition}
+
+\begin{proposition}
+\end{proposition}
+
+\begin{proof}
+\end{proof}
+
+\begin{equation}
+\end{equation}
+
+
+\begin{remark}%(comando para OBSERVAÇÃO )
+\end{remark}
+
+
+%Referências bibliográficas
+%----------------------------------------------------------------------------------
+\begin{thebibliography}{99}
+\bibitem[1]{el} TENENBLAT, K. {\em Introdução à geometria diferencial}, 2ª ed. São Paulo: Blucher, 2008.
+\bibitem[2]{Ta} ALENCAR, H.; SANTOS, W. {\em Geometria diferencial das curvas planas}, 24º Colóquio Brasileiro de Matemática. IMPA, 2003.
+\bibitem[3]{To} GUIDORIZZI, Hamilton L. {\em Um curso de cálculo}, vol. 1, 5ª ed. Rio de Janeiro: LTC 2001.
+\bibitem[4]{W} COIMBRA, J. R. V. {\em Uma Introdução à Geometria Diferencial}. Biblioteca Digital da UNICAMP. Campinas, São Paulo, 24 out. 2008. 136p. Disponivel em: $<$http://cutter.unicamp.br/document/?view=vtls000446072$>$. Acesso em: 12 jul. 2011.
+\bibitem[5]{Z} PICADO, J. {\em Apontamentos de Geometria Diferencial}. Universidade de Coimbra. Portugal, 21 Fev. 2005. 204p. Disponivel em: $<$www.mat.uc.pt/~picado/geomdif/0405/Apontamentos/sI1.pdf$>$. Acesso em: 11 jul. 2011.
+\end{thebibliography}
+\end{document}
+%----------------------------------------------------------------------------------
+%  \linebreak   (a linha é quebrada e a parte anterior ao comando fica justificada).
+
+%  O comando "\\*" %(impede que o texto mude de pagina)
+
+% \\[0,95cm]
+
+%[!htb]:  h => aqui.   t => em cima.  b => em (para figuras) 
