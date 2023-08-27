@@ -1,97 +1,109 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.18)  18 APR 2021 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.27)  27 AUG 2023 12:29
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **./WenesMon.tex
 (WenesMon.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> xparse <2020-03-03> (monografia.cls
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-03-30> (monografia.cls
 Document Class: monografia 2001/04/21 v1.4e Standard LaTeX document class
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(C:\Program Files\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count179
-\c@chapter=\count180
-\c@section=\count181
-\c@subsection=\count182
-\c@subsubsection=\count183
-\c@paragraph=\count184
-\c@subparagraph=\count185
-\c@figure=\count186
-\c@table=\count187
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip49
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen139
+\@emptytoks=\toks16
+\ex@=\dimen141
 ))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen140
+\pmbraise@=\dimen142
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count188
+\inf@bad=\count194
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count189
-\leftroot@=\count190
+\uproot@=\count195
+\leftroot@=\count196
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count191
-\DOTSCASE@=\count192
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count197
+\DOTSCASE@=\count198
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
-\big@size=\dimen141
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count193
-\c@MaxMatrixCols=\count194
+\macc@depth=\count199
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count266
 \dotsspace@=\muskip16
-\c@parentequation=\count195
-\dspbrk@lvl=\count196
-\tag@help=\toks16
-\row@=\count197
-\column@=\count198
-\maxfields@=\count199
-\andhelp@=\toks17
-\eqnshift@=\dimen142
-\alignsep@=\dimen143
-\tagshift@=\dimen144
-\tagwidth@=\dimen145
-\totwidth@=\dimen146
-\lineht@=\dimen147
-\@envbody=\toks18
-\multlinegap=\skip50
-\multlinetaggap=\skip51
-\mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
+\tag@help=\toks17
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
+\andhelp@=\toks18
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks19
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+(C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks20
-\thm@bodyfont=\toks21
-\thm@headfont=\toks22
-\thm@notefont=\toks23
-\thm@headpunct=\toks24
-\thm@preskip=\skip52
-\thm@postskip=\skip53
-\thm@headsep=\skip54
-\dth@everypar=\toks25
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks26
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -99,650 +111,572 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\eucal.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\eucal.sty
 Package: eucal 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+(C:\Program Files\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2021/01/26 3.53 The Babel package
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2023/03/28 3.87 The Babel package
+\babel@savecnt=\count272
+\U@D=\dimen150
+\l@unhyphenated=\language79
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2021/01/26 3.53 Babel common definitions
-\babel@savecnt=\count266
-\U@D=\dimen148
-\l@babelnohyphens=\language79
-
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-)
-\bbl@dirlevel=\count267
+\bbl@dirlevel=\count273
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\brazil.l
-df
-Language: portuges 2021/02/04 v1.2s Portuguese support from the babel system
-Package babel Info: \l@brazil = using hyphenrules for portuguese
-(babel)             (\language56) on input line 111.
+(C:\Program Files\MiKTeX\tex/latex/babel-portuges\brazil.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language56). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
-)) (C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks26
-\inpenc@posthook=\toks27
-
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/base\latin1.def
-File: latin1.def 2020/08/01 v1.3d Input encoding file
 ))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\bm.sty
-Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
+
+(C:\Program Files\MiKTeX\tex/latex/base\latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+))
+(C:\Program Files\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
 \symboldletters=\mathgroup8
 \symboldsymbols=\mathgroup9
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
 \symboldlasy=\mathgroup10
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Info: Redefining \bm on input line 209.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xy.sty
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xy.tex
-Bootstrap'ing: catcodes, docmode,
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyrecat.tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyidioms.tex)
+(C:\Program Files\MiKTeX\tex/generic/xypic\xy.sty
+(C:\Program Files\MiKTeX\tex/generic/xypic\xy.tex Bootstrap'ing: catcodes,
+docmode, (C:\Program Files\MiKTeX\tex/generic/xypic\xyrecat.tex)
+(C:\Program Files\MiKTeX\tex/generic/xypic\xyidioms.tex)
 
  Xy-pic version 3.8.9 <2013/10/06>
  Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen149
-\Y@c=\dimen150
-\U@c=\dimen151
-\D@c=\dimen152
-\L@c=\dimen153
-\R@c=\dimen154
-\Edge@c=\toks28
-\X@p=\dimen155
-\Y@p=\dimen156
-\U@p=\dimen157
-\D@p=\dimen158
-\L@p=\dimen159
-\R@p=\dimen160
-\Edge@p=\toks29
-\X@origin=\dimen161
-\Y@origin=\dimen162
-\X@xbase=\dimen163
-\Y@xbase=\dimen164
-\X@ybase=\dimen165
-\Y@ybase=\dimen166
-\X@min=\dimen167
-\Y@min=\dimen168
-\X@max=\dimen169
-\Y@max=\dimen170
-\lastobjectbox@=\box49
-\zerodotbox@=\box50
-\almostz@=\dimen171
+\X@c=\dimen151
+\Y@c=\dimen152
+\U@c=\dimen153
+\D@c=\dimen154
+\L@c=\dimen155
+\R@c=\dimen156
+\Edge@c=\toks29
+\X@p=\dimen157
+\Y@p=\dimen158
+\U@p=\dimen159
+\D@p=\dimen160
+\L@p=\dimen161
+\R@p=\dimen162
+\Edge@p=\toks30
+\X@origin=\dimen163
+\Y@origin=\dimen164
+\X@xbase=\dimen165
+\Y@xbase=\dimen166
+\X@ybase=\dimen167
+\Y@ybase=\dimen168
+\X@min=\dimen169
+\Y@min=\dimen170
+\X@max=\dimen171
+\Y@max=\dimen172
+\lastobjectbox@=\box53
+\zerodotbox@=\box54
+\almostz@=\dimen173
  direction,
-\d@X=\dimen172
-\d@Y=\dimen173
-\K@=\count268
-\KK@=\count269
-\Direction=\count270
-\K@dXdY=\dimen174
-\K@dYdX=\dimen175
+\d@X=\dimen174
+\d@Y=\dimen175
+\K@=\count274
+\KK@=\count275
+\Direction=\count276
+\K@dXdY=\dimen176
+\K@dYdX=\dimen177
 \xyread@=\read3
 \xywrite@=\write3
-\csp@=\count271
-\quotPTK@=\dimen176
+\csp@=\count277
+\quotPTK@=\dimen178
 
 utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks30
-\connectobjectbox@@=\box51
+\swaptoks@@=\toks31
+\connectobjectbox@@=\box55
  objects,
-\styletoks@=\toks31
+\styletoks@=\toks32
  decorations;
 kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 Package: xy 2013/10/06 Xy-pic version 3.8.9
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyall.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xyall.tex
  Xy-pic option: All features v.3.8
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycurve.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count272
-\crvpts@=\toks32
-\splinebox@=\box52
-\splineval@=\dimen177
-\splinedepth@=\dimen178
-\splinetol@=\dimen179
-\splinelength@=\dimen180
+\crv@cnt@=\count278
+\crvpts@=\toks33
+\splinebox@=\box56
+\splineval@=\dimen179
+\splinedepth@=\dimen180
+\splinetol@=\dimen181
+\splinelength@=\dimen182
  circles,
-\L@=\dimen181
+\L@=\dimen183
  loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyframe.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xyframe.tex
  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycmtip.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xycmtip.tex
  Xy-pic option: Computer Modern tip extension v.3.7
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xytips.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xytips.tex
  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyline.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xyline.tex
  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen182
+\xylinethick@=\dimen184
  loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyrotate.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycolor.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xycolor.tex
  Xy-pic option: Colour extension v.3.11 loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xymatrix.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xymatrix.tex
  Xy-pic option: Matrix feature v.3.14
-\Row=\count273
-\Col=\count274
-\queue@=\toks33
-\queue@@=\toks34
-\qcount@=\count275
-\qcount@@=\count276
-\matrixsize@=\count277
+\Row=\count279
+\Col=\count280
+\queue@=\toks34
+\queue@@=\toks35
+\qcount@=\count281
+\qcount@@=\count282
+\matrixsize@=\count283
  loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyarrow.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xygraph.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xygraph.tex
  Xy-pic option: Graph feature v.3.11 loaded) loaded)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf.tex
+(C:\Program Files\MiKTeX\tex/generic/xypic\xypdf.tex
  Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-co.tex
-loaded) Xy-pic pdf driver: `curve' extension support
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-cu.tex
-loaded) Xy-pic pdf driver: `frame' extension support
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-fr.tex
-loaded) Xy-pic pdf driver: `line' extension support
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-li.tex
-loaded) Xy-pic pdf driver: `rotate' extension support
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-ro.tex
-loaded) loaded))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
-sty
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
-y
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--common.tex
-\pgfutil@everybye=\toks35
-\pgfutil@tempdima=\dimen183
-\pgfutil@tempdimb=\dimen184
-
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--common-lists.tex))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--latex.def
-\pgfutil@abb=\box53
+(C:\Program Files\MiKTeX\tex/generic/xypic\xypdf-co.tex loaded)
+Xy-pic pdf driver: `curve' extension support
+(C:\Program Files\MiKTeX\tex/generic/xypic\xypdf-cu.tex loaded)
+Xy-pic pdf driver: `frame' extension support
+(C:\Program Files\MiKTeX\tex/generic/xypic\xypdf-fr.tex loaded)
+Xy-pic pdf driver: `line' extension support
+(C:\Program Files\MiKTeX\tex/generic/xypic\xypdf-li.tex loaded)
+Xy-pic pdf driver: `rotate' extension support
+(C:\Program Files\MiKTeX\tex/generic/xypic\xypdf-ro.tex loaded) loaded))
+(C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks36
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
-code.tex
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
-Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box57
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
-Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
-sty
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks36
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks37
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen185
-\Gin@req@width=\dimen186
+\Gin@req@height=\dimen187
+\Gin@req@width=\dimen188
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
-sty
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s.code.tex
-Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex
-\pgfkeys@pathtoks=\toks37
-\pgfkeys@temptoks=\toks38
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-filtered.code.tex
-\pgfkeys@tmptoks=\toks39
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.
+tex
+\pgfkeys@tmptoks=\toks40
 ))
-\pgf@x=\dimen187
-\pgf@y=\dimen188
-\pgf@xa=\dimen189
-\pgf@ya=\dimen190
-\pgf@xb=\dimen191
-\pgf@yb=\dimen192
-\pgf@xc=\dimen193
-\pgf@yc=\dimen194
-\pgf@xd=\dimen195
-\pgf@yd=\dimen196
+\pgf@x=\dimen189
+\pgf@y=\dimen190
+\pgf@xa=\dimen191
+\pgf@ya=\dimen192
+\pgf@xb=\dimen193
+\pgf@yb=\dimen194
+\pgf@xc=\dimen195
+\pgf@yc=\dimen196
+\pgf@xd=\dimen197
+\pgf@yd=\dimen198
 \w@pgf@writea=\write4
 \r@pgf@reada=\read4
-\c@pgf@counta=\count278
-\c@pgf@countb=\count279
-\c@pgf@countc=\count280
-\c@pgf@countd=\count281
-\t@pgf@toka=\toks40
-\t@pgf@tokb=\toks41
-\t@pgf@tokc=\toks42
-\pgf@sys@id@count=\count282
-
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
-fg
-File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+\c@pgf@counta=\count284
+\c@pgf@countb=\count285
+\c@pgf@countc=\count286
+\c@pgf@countd=\count287
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+\pgf@sys@id@count=\count288
+ (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-pdftex.def
-File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-common-pdf.def
-File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-ssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count283
-\pgfsyssoftpath@bigbuffer@items=\count284
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count289
+\pgfsyssoftpath@bigbuffer@items=\count290
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-sprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-e.code.tex
-Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
-code.tex
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
-code.tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
-r.code.tex
-\pgfmath@dimen=\dimen197
-\pgfmath@count=\count285
-\pgfmath@box=\box54
-\pgfmath@toks=\toks43
-\pgfmath@stack@operand=\toks44
-\pgfmath@stack@operation=\toks45
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.code.tex
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.basic.code.tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.trigonometric.code.tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.random.code.tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.comparison.code.tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.base.code.tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.round.code.tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.misc.code.tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.integerarithmetics.code.tex)))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
-.code.tex
-\c@pgfmathroundto@lastzeros=\count286
-))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen199
+\pgfmath@count=\count291
+\pgfmath@box=\box58
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.co
+de.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.
 tex)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epoints.code.tex
-File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@picminx=\dimen198
-\pgf@picmaxx=\dimen199
-\pgf@picminy=\dimen256
-\pgf@picmaxy=\dimen257
-\pgf@pathminx=\dimen258
-\pgf@pathmaxx=\dimen259
-\pgf@pathminy=\dimen260
-\pgf@pathmaxy=\dimen261
-\pgf@xx=\dimen262
-\pgf@xy=\dimen263
-\pgf@yx=\dimen264
-\pgf@yy=\dimen265
-\pgf@zx=\dimen266
-\pgf@zy=\dimen267
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@path@lastx=\dimen268
-\pgf@path@lasty=\dimen269
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathusage.code.tex
-File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@shorten@end@additional=\dimen270
-\pgf@shorten@start@additional=\dimen271
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-escopes.code.tex
-File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfpic=\box55
-\pgf@hbox=\box56
-\pgf@layerbox@main=\box57
-\pgf@picture@serial@count=\count287
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-egraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgflinewidth=\dimen272
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransformations.code.tex
-File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@pt@x=\dimen273
-\pgf@pt@y=\dimen274
-\pgf@pt@temp=\dimen275
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-equick.code.tex
-File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-earrows.code.tex
-File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfarrowsep=\dimen276
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eshade.code.tex
-File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@max=\dimen277
-\pgf@sys@shading@range@num=\count288
-\pgf@shadingcount=\count289
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eimage.code.tex
-File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfexternal@startupbox=\box58
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
+cs.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count292
 ))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-elayers.code.tex
-File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen256
+\pgf@picmaxx=\dimen257
+\pgf@picminy=\dimen258
+\pgf@picmaxy=\dimen259
+\pgf@pathminx=\dimen260
+\pgf@pathmaxx=\dimen261
+\pgf@pathminy=\dimen262
+\pgf@pathmaxy=\dimen263
+\pgf@xx=\dimen264
+\pgf@xy=\dimen265
+\pgf@yx=\dimen266
+\pgf@yy=\dimen267
+\pgf@zx=\dimen268
+\pgf@zy=\dimen269
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransparency.code.tex
-File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.t
+ex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen270
+\pgf@path@lasty=\dimen271
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen272
+\pgf@shorten@start@additional=\dimen273
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-erdf.code.tex
-File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count293
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.te
+x
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen274
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code
+.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen275
+\pgf@pt@y=\dimen276
+\pgf@pt@temp=\dimen277
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.
+tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen278
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen279
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box62
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.te
+x
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-shapes.code.tex
-File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfnodeparttextbox=\box59
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box63
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-plot.code.tex
-File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-0-65.sty
-Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@nodesepstart=\dimen278
-\pgf@nodesepend=\dimen279
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen280
+\pgf@nodesepend=\dimen281
 )
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-1-18.sty
-Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
+(C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen282
+\pgffor@skip=\dimen283
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
-y
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
-ty
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
-code.tex
-Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex)
-\pgffor@iter=\dimen280
-\pgffor@skip=\dimen281
-\pgffor@stack=\toks46
-\pgffor@toks=\toks47
-))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z\tikz.code.tex
-Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
-
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
-aryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count290
-\pgfplotmarksize=\dimen282
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
+tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count296
+\pgfplotmarksize=\dimen284
 )
-\tikz@lastx=\dimen283
-\tikz@lasty=\dimen284
-\tikz@lastxsaved=\dimen285
-\tikz@lastysaved=\dimen286
-\tikz@lastmovetox=\dimen287
-\tikz@lastmovetoy=\dimen288
-\tikzleveldistance=\dimen289
-\tikzsiblingdistance=\dimen290
-\tikz@figbox=\box60
-\tikz@figbox@bg=\box61
-\tikz@tempbox=\box62
-\tikz@tempbox@bg=\box63
-\tikztreelevel=\count291
-\tikznumberofchildren=\count292
-\tikznumberofcurrentchild=\count293
-\tikz@fig@count=\count294
-
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-matrix.code.tex
-File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count295
-\pgfmatrixcurrentcolumn=\count296
-\pgf@matrix@numberofcolumns=\count297
+\tikz@lastx=\dimen285
+\tikz@lasty=\dimen286
+\tikz@lastxsaved=\dimen287
+\tikz@lastysaved=\dimen288
+\tikz@lastmovetox=\dimen289
+\tikz@lastmovetoy=\dimen290
+\tikzleveldistance=\dimen291
+\tikzsiblingdistance=\dimen292
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count297
+\tikznumberofchildren=\count298
+\tikznumberofcurrentchild=\count299
+\tikz@fig@count=\count300
+ (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count301
+\pgfmatrixcurrentcolumn=\count302
+\pgf@matrix@numberofcolumns=\count303
 )
-\tikz@expandcount=\count298
+\tikz@expandcount=\count304
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/picinpar\picinpar.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Program Files\MiKTeX\tex/latex/picinpar\picinpar.sty
 Pictures in Paragraphs. Version 1.2a, July 13, 1993
-\br=\count299
-\bl=\count300
-\na=\count301
-\nb=\count302
-\tcdsav=\count303
-\tcl=\count304
-\tcd=\count305
-\tcn=\count306
-\cumtcl=\count307
-\cumpartcl=\count308
-\lftside=\dimen291
-\rtside=\dimen292
-\hpic=\dimen293
-\vpic=\dimen294
-\strutilg=\dimen295
-\picwd=\dimen296
-\topheight=\dimen297
-\ilg=\dimen298
-\lpic=\dimen299
-\lwindowsep=\dimen300
-\rwindowsep=\dimen301
-\cumpar=\dimen302
-\twa=\toks48
-\la=\toks49
-\ra=\toks50
-\ha=\toks51
-\pictoc=\toks52
-\rawtext=\box64
-\holder=\box65
-\windowbox=\box66
-\wartext=\box67
-\finaltext=\box68
-\aslice=\box69
-\bslice=\box70
-\wbox=\box71
-\wstrutbox=\box72
-\picbox=\box73
-\waslice=\box74
-\wbslice=\box75
-\fslice=\box76
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfar
-rows.sty
-Package: pgfarrows 2020/12/27 v3.1.8b (3.1.8b)
+\br=\count305
+\bl=\count306
+\na=\count307
+\nb=\count308
+\tcdsav=\count309
+\tcl=\count310
+\tcd=\count311
+\tcn=\count312
+\cumtcl=\count313
+\cumpartcl=\count314
+\lftside=\dimen293
+\rtside=\dimen294
+\hpic=\dimen295
+\vpic=\dimen296
+\strutilg=\dimen297
+\picwd=\dimen298
+\topheight=\dimen299
+\ilg=\dimen300
+\lpic=\dimen301
+\lwindowsep=\dimen302
+\rwindowsep=\dimen303
+\cumpar=\dimen304
+\twa=\toks49
+\la=\toks50
+\ra=\toks51
+\ha=\toks52
+\pictoc=\toks53
+\rawtext=\box68
+\holder=\box69
+\windowbox=\box70
+\wartext=\box71
+\finaltext=\box72
+\aslice=\box73
+\bslice=\box74
+\wbox=\box75
+\wstrutbox=\box76
+\picbox=\box77
+\waslice=\box78
+\wbslice=\box79
+\fslice=\box80
+) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfarrows.sty
+Package: pgfarrows 2023-01-15 v3.1.10 (3.1.10)
 
 
 Package pgfarrows Warning: This package is obsolete. pgf.sty will load arrow ma
 nagement automatically on input line 17.
 
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfno
-des.sty
-Package: pgfnodes 2020/12/27 v3.1.8b (3.1.8b)
+) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfnodes.sty
+Package: pgfnodes 2023-01-15 v3.1.10 (3.1.10)
 
 
 Package pgfnodes Warning: This package is obsolete. pgf.sty will load node mana
 gement automatically on input line 17.
 
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfau
-tomata.sty
-Package: pgfautomata 2020/12/27 v3.1.8b (3.1.8b)
+) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfautomata.sty
+Package: pgfautomata 2023-01-15 v3.1.10 (3.1.10)
 
 
 Package pgfautomata Warning: This package is obsolete. on input line 17.
 
-\pgf@stateradius=\dimen303
-\pgf@mooreradius=\dimen304
-\pgf@doublethickness=\dimen305
-\pgf@statebackoff=\dimen306
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfhe
-aps.sty
-Package: pgfheaps 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@stateradius=\dimen305
+\pgf@mooreradius=\dimen306
+\pgf@doublethickness=\dimen307
+\pgf@statebackoff=\dimen308
+) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfheaps.sty
+Package: pgfheaps 2023-01-15 v3.1.10 (3.1.10)
 
 
 Package pgfheaps Warning: This package is obsolete. on input line 16.
 
-\pgf@heapx=\dimen307
-\pgf@heapy=\dimen308
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfsh
-ade.sty
-Package: pgfshade 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@heapx=\dimen309
+\pgf@heapy=\dimen310
+) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfshade.sty
+Package: pgfshade 2023-01-15 v3.1.10 (3.1.10)
 
 
 Package pgfshade Warning: This package is obsolete. pgf.sty will load shade man
 agement automatically on input line 17.
 
-) (C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
+) (C:\Program Files\MiKTeX\tex/latex/fncychap\fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
-\RW=\skip55
-\mylen=\skip56
-\myhi=\skip57
-\px=\skip58
-\py=\skip59
-\pyy=\skip60
-\pxx=\skip61
+\RW=\skip56
+\mylen=\skip57
+\myhi=\skip58
+\px=\skip59
+\py=\skip60
+\pyy=\skip61
+\pxx=\skip62
 )
-\c@theorem=\count309
-\c@axiom=\count310
-\c@corollary=\count311
-\c@lemma=\count312
-\c@proposition=\count313
-\c@definition=\count314
-\c@example=\count315
-\c@remark=\count316
+\c@theorem=\count315
+\c@axiom=\count316
+\c@corollary=\count317
+\c@lemma=\count318
+\c@proposition=\count319
+\c@definition=\count320
+\c@example=\count321
+\c@remark=\count322
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count317
-\l__pdf_internal_box=\box77
-) (WenesMon.aux)
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count323
+\l__pdf_internal_box=\box81
+)
+(WenesMon.aux)
 \openout1 = `WenesMon.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -761,20 +695,19 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
 LaTeX Font Info:    ... okay on input line 53.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
 
-
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
 
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 53
 .
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+(C:\Program Files\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
@@ -783,36 +716,378 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 53.
 Package xypdf Info: Line width: 0.47998pt on input line 53.
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count318
-\scratchdimen=\dimen309
-\scratchbox=\box78
-\nofMPsegments=\count319
-\nofMParguments=\count320
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count321
-\MPscratchDim=\dimen310
-\MPnumerator=\count322
-\makeMPintoPDFobject=\count323
-\everyMPtoPDFconversion=\toks54
-)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+\scratchcounter=\count324
+\scratchdimen=\dimen311
+\scratchbox=\box82
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen312
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks55
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
+(C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
+(C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-(C:\Users\Wenes\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.
+(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Program Files\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+<uft.pdf, id=4, 529.98392pt x 196.80586pt>
+File: uft.pdf Graphic file (type pdf)
+<use uft.pdf>
+Package pdftex.def Info: uft.pdf  used on input line 83.
+(pdftex.def)             Requested size: 95.39297pt x 35.42352pt.
+ [1
+
+{C:/Users/Wenes/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./uft.pdf>] 
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+
+ []
+
+[1] [1] [2
+
+] [3
+
+] [4] (WenesMon.toc)
+\tf@toc=\write5
+\openout5 = `WenesMon.toc'.
+
+ [5
+
+] [6
+
+]
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
+60.
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+60.
+
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) [7
+
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+<def211.pdf, id=55, 494.42024pt x 231.43805pt>
+File: def211.pdf Graphic file (type pdf)
+<use def211.pdf>
+Package pdftex.def Info: def211.pdf  used on input line 184.
+(pdftex.def)             Requested size: 346.09181pt x 162.00551pt.
+<ex213.pdf, id=56, 379.15793pt x 205.76454pt>
+File: ex213.pdf Graphic file (type pdf)
+<use ex213.pdf>
+Package pdftex.def Info: ex213.pdf  used on input line 200.
+(pdftex.def)             Requested size: 265.40874pt x 144.03418pt.
+ [8 <./def211.pdf> <./ex213.pdf>]
+<ex214.pdf, id=86, 1170.45349pt x 500.71858pt>
+File: ex214.pdf Graphic file (type pdf)
+<use ex214.pdf>
+Package pdftex.def Info: ex214.pdf  used on input line 208.
+(pdftex.def)             Requested size: 316.02667pt x 135.19582pt.
+<ex215.pdf, id=87, 392.65044pt x 225.55908pt>
+File: ex215.pdf Graphic file (type pdf)
+<use ex215.pdf>
+Package pdftex.def Info: ex215.pdf  used on input line 218.
+(pdftex.def)             Requested size: 176.69106pt x 101.50064pt.
+<ex216.pdf, id=88, 237.3166pt x 239.82478pt>
+File: ex216.pdf Graphic file (type pdf)
+<use ex216.pdf>
+Package pdftex.def Info: ex216.pdf  used on input line 229.
+(pdftex.def)             Requested size: 118.658pt x 119.91208pt.
+ [9 <./ex214.pdf> <./ex215.pdf>]
+<vetor-tangente.pdf, id=110, 399.82394pt x 133.19463pt>
+File: vetor-tangente.pdf Graphic file (type pdf)
+<use vetor-tangente.pdf>
+Package pdftex.def Info: vetor-tangente.pdf  used on input line 247.
+(pdftex.def)             Requested size: 319.85959pt x 106.55583pt.
+ [10 <./ex216.pdf> <./vetor-tangente.pdf>]
+<reta-tangente.pdf, id=159, 517.42938pt x 247.42989pt>
+File: reta-tangente.pdf Graphic file (type pdf)
+<use reta-tangente.pdf>
+Package pdftex.def Info: reta-tangente.pdf  used on input line 279.
+(pdftex.def)             Requested size: 258.71405pt x 123.71463pt.
+ [11]
+<ex223.pdf, id=164, 418.88786pt x 179.05365pt>
+File: ex223.pdf Graphic file (type pdf)
+<use ex223.pdf>
+Package pdftex.def Info: ex223.pdf  used on input line 293.
+(pdftex.def)             Requested size: 251.33466pt x 107.433pt.
+ [12 <./reta-tangente.pdf> <./ex223.pdf>]
+<ex224.pdf, id=192, 473.4495pt x 303.53783pt>
+File: ex224.pdf Graphic file (type pdf)
+<use ex224.pdf>
+Package pdftex.def Info: ex224.pdf  used on input line 329.
+(pdftex.def)             Requested size: 236.72415pt x 151.76854pt.
+ [13 <./ex224.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 370--373
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+
+ []
+
+[14]
+<pro221.pdf, id=211, 281.93591pt x 167.33165pt>
+File: pro221.pdf Graphic file (type pdf)
+<use pro221.pdf>
+Package pdftex.def Info: pro221.pdf  used on input line 397.
+(pdftex.def)             Requested size: 211.4514pt x 125.49841pt.
+ [15 <./pro221.pdf>]
+<def231.pdf, id=220, 520.02943pt x 274.88739pt>
+File: def231.pdf Graphic file (type pdf)
+<use def231.pdf>
+Package pdftex.def Info: def231.pdf  used on input line 421.
+(pdftex.def)             Requested size: 260.01407pt x 137.44334pt.
+<ex232.pdf, id=221, 429.82742pt x 227.32207pt>
+File: ex232.pdf Graphic file (type pdf)
+<use ex232.pdf>
+Package pdftex.def Info: ex232.pdf  used on input line 428.
+(pdftex.def)             Requested size: 214.91318pt x 113.66075pt.
+ [16 <./def231.pdf>] [17 <./ex232.pdf>]
+<ex234.pdf, id=243, 450.19443pt x 223.76538pt>
+File: ex234.pdf Graphic file (type pdf)
+<use ex234.pdf>
+Package pdftex.def Info: ex234.pdf  used on input line 485.
+(pdftex.def)             Requested size: 315.13394pt x 156.63467pt.
+<def234.pdf, id=244, 483.0892pt x 191.97914pt>
+File: def234.pdf Graphic file (type pdf)
+<use def234.pdf>
+Package pdftex.def Info: def234.pdf  used on input line 494.
+(pdftex.def)             Requested size: 338.16014pt x 134.38448pt.
+ [18] [19 <./ex234.pdf> <./def234.pdf>] [20]
+<campvetor.pdf, id=292, 215.80775pt x 146.1184pt>
+File: campvetor.pdf Graphic file (type pdf)
+<use campvetor.pdf>
+Package pdftex.def Info: campvetor.pdf  used on input line 566.
+(pdftex.def)             Requested size: 129.48564pt x 87.67169pt.
+ [21] [22 <./campvetor.pdf>] [23]
+<def241.pdf, id=337, 420.75522pt x 155.2182pt>
+File: def241.pdf Graphic file (type pdf)
+<use def241.pdf>
+Package pdftex.def Info: def241.pdf  used on input line 640.
+(pdftex.def)             Requested size: 294.52664pt x 108.65198pt.
+<refefrenet.pdf, id=338, 378.9613pt x 217.6672pt>
+File: refefrenet.pdf Graphic file (type pdf)
+<use refefrenet.pdf>
+Package pdftex.def Info: refefrenet.pdf  used on input line 653.
+(pdftex.def)             Requested size: 265.2711pt x 152.36598pt.
+ [24 <./def241.pdf>] [25 <./refefrenet.pdf>] [26]
+<ex242.pdf, id=368, 526.06033pt x 249.75168pt>
+File: ex242.pdf Graphic file (type pdf)
+<use ex242.pdf>
+Package pdftex.def Info: ex242.pdf  used on input line 727.
+(pdftex.def)             Requested size: 263.02953pt x 124.87552pt.
+ [27 <./ex242.pdf>] [28] [29]
+Underfull \hbox (badness 1990) in paragraph at lines 818--819
+ \OT1/cmr/m/n/12 A se-guir ve-re-mos a in-ter-preta^^Xc~ao geom^^Setrica do si-
+nal da cur-va-tura. Seja
+ []
+
+<intergeom.pdf, id=384, 321.66934pt x 124.14922pt>
+File: intergeom.pdf Graphic file (type pdf)
+<use intergeom.pdf>
+Package pdftex.def Info: intergeom.pdf  used on input line 831.
+(pdftex.def)             Requested size: 321.66855pt x 124.1489pt.
+[30]
+<circulo-osculador.pdf, id=388, 161.61469pt x 143.46408pt>
+File: circulo-osculador.pdf Graphic file (type pdf)
+<use circulo-osculador.pdf>
+Package pdftex.def Info: circulo-osculador.pdf  used on input line 851.
+(pdftex.def)             Requested size: 145.45186pt x 129.11646pt.
+<intergeo.pdf, id=389, 257.96375pt x 160.5999pt>
+File: intergeo.pdf Graphic file (type pdf)
+<use intergeo.pdf>
+Package pdftex.def Info: intergeo.pdf  used on input line 859.
+(pdftex.def)             Requested size: 206.37126pt x 128.48009pt.
+ [31 <./intergeom.pdf> <./circulo-osculador.pdf>] [32 <./intergeo.pdf>]
+[33]
+Underfull \hbox (badness 2189) in paragraph at lines 904--905
+[]\OT1/cmr/m/n/12 Sejam $\OML/cmm/m/it/12 ; ^^L \OT1/cmr/m/n/12 : \OML/cmm/m/i
+t/12 I \OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R[]$ \OT1/cmr/m/n/12 cur-vas re-gu-la-r
+es de mesma cur-va-tura, ou seja,
+ []
+
+
+Overfull \hbox (8.27177pt too wide) in paragraph at lines 916--916
+[]\OT1/cmr/bx/n/17.28 Determinando Cur-vas Re-gu-la-res a Par-tir da Cur-
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 958--961
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 961--965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 982--986
+
+ []
+
+[36]
+<espiral-de-ar.pdf, id=459, 306.53731pt x 299.52512pt>
+File: espiral-de-ar.pdf Graphic file (type pdf)
+<use espiral-de-ar.pdf>
+Package pdftex.def Info: espiral-de-ar.pdf  used on input line 990.
+(pdftex.def)             Requested size: 183.9238pt x 179.71645pt.
+ [37 <./espiral-de-ar.pdf>]
+Cap\'{\i }tulo 2.
+
+Overfull \hbox (1.37526pt too wide) in paragraph at lines 995--999
+ \OT1/cmr/m/n/12 O te-o-rema da de-si-gual-dade iso-pe-rim^^Setrica surge do se
+-guinte pro-blema (iso-pe-rim^^Setrico):
+ []
+
+<fechada.pdf, id=471, 178.22966pt x 75.23639pt>
+File: fechada.pdf Graphic file (type pdf)
+<use fechada.pdf>
+Package pdftex.def Info: fechada.pdf  used on input line 1010.
+(pdftex.def)             Requested size: 178.2292pt x 75.23619pt.
+<simples.pdf, id=472, 163.88316pt x 82.59227pt>
+File: simples.pdf Graphic file (type pdf)
+<use simples.pdf>
+Package pdftex.def Info: simples.pdf  used on input line 1015.
+(pdftex.def)             Requested size: 163.88275pt x 82.59204pt.
+[38
+
+ <./fechada.pdf> <./simples.pdf
+
+pdfTeX warning: pdflatex.exe (file ./simples.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+>]
+<formula1.pdf, id=547, 180.98015pt x 125.25656pt>
+File: formula1.pdf Graphic file (type pdf)
+<use formula1.pdf>
+Package pdftex.def Info: formula1.pdf  used on input line 1054.
+(pdftex.def)             Requested size: 180.97969pt x 125.25624pt.
+ [39]
+<regiao.pdf, id=551, 179.70065pt x 125.25656pt>
+File: regiao.pdf Graphic file (type pdf)
+<use regiao.pdf>
+Package pdftex.def Info: regiao.pdf  used on input line 1083.
+(pdftex.def)             Requested size: 215.6397pt x 150.3071pt.
+ [40 <./formula1.pdf>] [41 <./regiao.pdf>]
+<figura35.pdf, id=633, 201.70175pt x 233.09343pt>
+File: figura35.pdf Graphic file (type pdf)
+<use figura35.pdf>
+Package pdftex.def Info: figura35.pdf  used on input line 1115.
+(pdftex.def)             Requested size: 201.70125pt x 233.09285pt.
+ [42 <./figura35.pdf>]
+[43] [44]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 1190.
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 1169--1190
+\OT1/cmr/m/n/12 serta^^Xc~ao (Mes-tre em Ma-tem^^Satica) - Ins-ti-tuto de Ma-te
+m^^Satica, Es-tat^^S^^Pstica e
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 1169--1190
+\OT1/cmr/m/n/12 Com-puta^^Xc~ao Ci-ent^^S^^Pfica, UNI-CAMP, Cam-pi-nas, S~ao Pa
+ulo. Dis-po-ni-vel em:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1190
+\OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 http://cutter.unicamp.br/document/?view=vtls
+000446072$\OML/cmm/m/it/12 >$\OT1/cmr/m/n/12 . Acesso em: 12
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1190
+\OT1/cmr/m/n/12 PI-CADO, J. \OT1/cmr/m/it/12 Apon-ta-men-tos de ge-o-me-tria di
+-fe-ren-cial\OT1/cmr/m/n/12 . Uni-ver-si-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1190
+\OT1/cmr/m/n/12 dade de Coim-bra. Por-tu-gal: 21 Fev. 2005. 204p. Dis-po-ni-vel
+ em:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1190
+\OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 www.mat.uc.pt/ picado/geomdif/0405/Apontamen
+tos/sI1.pdf$\OML/cmm/m/it/12 >$\OT1/cmr/m/n/12 . Acesso em:
+ []
+
+[45
+
+] [46] (WenesMon.aux) ) 
+Here is how much of TeX's memory you used:
+ 18480 strings out of 476331
+ 343191 string characters out of 5797580
+ 1866660 words of memory out of 5000000
+ 38478 multiletter control sequences out of 15000+600000
+ 529388 words of font info for 90 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 102i,14n,104p,3238b,384s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Wenes\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
+nappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/P
+rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fi
+les/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam
+10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/
+MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on WenesMon.pdf (49 pages, 2039801 bytes).
+PDF statistics:
+ 744 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,4 +1,4 @@
-\babel@toc {brazil}{}
+\babel@toc {brazil}{}\relax 
 \contentsline {chapter}{Introdu\c c\~ao}{6}{}%
 \contentsline {chapter}{\numberline {1}Curvas Planas}{7}{}%
 \contentsline {section}{\numberline {1.1}Curva Parametrizada Diferenci\'avel}{7}{}%
